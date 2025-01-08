@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ProjectProvider } from "@/context/ProjectContext";
 import HomeLinkContainer from "@/components/HomeLinkContainer";
 import ProjectsMainCopy from "@/components/ProjectsMainCopy";
 import SearchContainer from "@/components/SearchContainer";
@@ -12,14 +11,12 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <ProjectProvider>
-      <main>
-        <HomeLinkContainer />
-        <ProjectsMainCopy />
-        <SearchContainer />
-        <ProjectsContainer />
-        <ModalProject />
-      </main>
-    </ProjectProvider>
+    <main>
+      <HomeLinkContainer />
+      <ProjectsMainCopy />
+      <SearchContainer />
+      <ProjectsContainer />
+      <ModalProject />
+    </main>
   );
 }

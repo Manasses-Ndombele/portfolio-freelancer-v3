@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { ProjectProvider } from "@/context/ProjectContext";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import MainHeader from "@/components/MainHeader";
 import MainFooter from "@/components/MainFooter";
@@ -22,7 +23,9 @@ export default function RootLayout({
         <ThemeWrapper>
           <body>
             <MainHeader />
-            {children}
+            <ProjectProvider>
+              {children}
+            </ProjectProvider>
             <MainFooter />
             <ScrollTopBtn />
           </body>
