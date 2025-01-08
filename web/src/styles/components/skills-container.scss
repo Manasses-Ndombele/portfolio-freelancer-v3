@@ -10,13 +10,74 @@
   }
 }
 
+html.light {
+  #skills-container {
+    h2 {
+      color: $primary-color-b;
+    }
+
+    #skills-categories {
+      background-color: $tertiary-color;
+
+      &::before {
+        background-image: linear-gradient(
+          to right,
+          $tertiary-color-b,
+          transparent
+        );
+      }
+
+      &::after {
+        background-image: linear-gradient(
+          to left,
+          $tertiary-color-b,
+          transparent
+        );
+      }
+    }
+  }
+}
+
+html.dark {
+  #skills-container {
+    h2 {
+      color: $primary-color;
+    }
+
+    #skills-categories {
+      &::before {
+        background-image: linear-gradient(
+          to right,
+          $secondary-color,
+          transparent
+        );
+
+        opacity: 0.5;
+      }
+
+      &::after {
+        background-image: linear-gradient(
+          to left,
+          $secondary-color,
+          transparent
+        );
+
+        opacity: 0.5;
+      }
+
+      h3 {
+        color: $primary-color-b;
+      }
+    }
+  }
+}
+
 #skills-container {
   margin-top: 3rem;
 
   #skills-copy {
     h2 {
       text-align: center;
-      color: $primary-color-b;
       text-transform: capitalize;
       @include montserrat-font();
     }
@@ -28,7 +89,6 @@
   }
 
   #skills-categories {
-    background-color: $tertiary-color;
     padding: 1rem 0rem;
     position: relative;
 
@@ -40,7 +100,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to right, $tertiary-color-b, transparent);
     }
 
     &::after {
@@ -51,7 +110,6 @@
       position: absolute;
       top: 0;
       right: 0;
-      background-image: linear-gradient(to left, $tertiary-color-b, transparent);
     }
 
     .skills-category {

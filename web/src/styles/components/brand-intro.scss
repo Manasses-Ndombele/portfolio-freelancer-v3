@@ -1,27 +1,60 @@
 @use "../base/variables.scss" as *;
 
+html.light {
+  #brand-intro-content {
+    h1 {
+      color: $secondary-color;
+    }
+  }
+
+  #video-shadow {
+    background-image: radial-gradient(
+      $secondary-color,
+      transparent,
+      transparent
+    );
+    opacity: 0.3;
+  }
+}
+
+html.dark {
+  #brand-intro-content {
+    h1 {
+      color: $primary-color-b;
+    }
+  }
+
+  #video-shadow {
+    background-image: radial-gradient(
+      $quartenary-color,
+      transparent,
+      transparent
+    );
+    opacity: 0.5;
+  }
+}
+
 #brand-intro {
   #brand-intro-content {
     padding: 0rem 1rem;
 
     h1 {
-      color: $secondary-color;
       text-transform: capitalize;
       @include montserrat-font();
     }
 
     button.main-cta {
       width: 100%;
-      background-image: linear-gradient(
-        to top,
-        $primary-color-b,
-        $primary-color
-      );
       border: none;
       border-radius: 10px;
       font-size: 1em;
       padding: 0.5rem 0rem;
       cursor: pointer;
+      background-image: linear-gradient(
+        to top,
+        $primary-color-b,
+        $primary-color
+      );
       color: $tertiary-color;
       @include poppins-font(500);
     }
@@ -39,14 +72,7 @@
     #video-shadow {
       width: 100%;
       height: 10rem;
-      background-image: radial-gradient(
-        $secondary-color,
-        transparent,
-        transparent
-      );
-
       transform: translateY(-4rem);
-      opacity: 0.3;
     }
   }
 }

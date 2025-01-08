@@ -1,20 +1,97 @@
 @use "../base/variables.scss" as *;
 
+html.light {
+  header#main-header {
+    #header-main-layout {
+      background-color: $tertiary-color-b;
+      box-shadow: 0px 0px 2px $secondary-color;
+
+      strong {
+        color: $secondary-color;
+      }
+    }
+
+    button.menu-btn {
+      background-color: transparent;
+    }
+
+    #header-options {
+      background-color: $tertiary-color-b;
+
+      select {
+        background-color: transparent;
+        border: 2px solid $tertiary-color;
+      }
+
+      button#theme-btn {
+        background-color: transparent;
+        border: 2px solid $tertiary-color;
+      }
+
+      button.main-cta {
+        background-color: $primary-color;
+        color: $tertiary-color;
+      }
+    }
+  }
+}
+
+html.dark {
+  header#main-header {
+    #header-main-layout {
+      background-color: $tertiary-color;
+
+      strong {
+        color: $quartenary-color;
+      }
+    }
+
+    button.menu-btn {
+      background-color: $primary-color-b;
+      color: $tertiary-color-b;
+      border-radius: 50%;
+      font-size: 1.7em;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #header-options {
+      background-color: $tertiary-color;
+
+      label {
+        color: $secondary-color;
+      }
+
+      select {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+      }
+
+      button#theme-btn {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+      }
+
+      button.main-cta {
+        background-color: $primary-color-b;
+        color: $tertiary-color;
+      }
+    }
+  }
+}
+
 header#main-header {
   #header-main-layout {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: $tertiary-color-b;
-    box-shadow: 0px 0px 2px $secondary-color;
 
     a {
       text-decoration: none;
-
-      strong {
-        color: $secondary-color;
-      }
 
       span {
         color: $primary-color-b;
@@ -24,7 +101,6 @@ header#main-header {
 
   button.menu-btn {
     border: none;
-    background-color: transparent;
     font-size: 1.3em;
     padding: 0;
     cursor: pointer;
@@ -37,7 +113,6 @@ header#main-header {
     opacity: 0;
     width: 100vw;
     height: 100vh;
-    background-color: $tertiary-color-b;
     transform: translateY(-100vh);
     transition: all 0.4s ease-in;
 
@@ -82,8 +157,6 @@ header#main-header {
         }
 
         select {
-          background-color: transparent;
-          border: 2px solid $tertiary-color;
           border-radius: 10px;
           font-size: 1em;
           padding: 0.5rem 1rem;
@@ -95,8 +168,6 @@ header#main-header {
       button#theme-btn {
         width: 100%;
         margin: 0.6rem 0rem;
-        background-color: transparent;
-        border: 2px solid $tertiary-color;
         border-radius: 10px;
         font-size: 1em;
         padding: 0.5rem 0rem;
@@ -114,13 +185,11 @@ header#main-header {
 
         button.main-cta {
           width: 100%;
-          background-color: $primary-color;
           border: none;
           border-radius: 10px;
           font-size: 1em;
           padding: 0.5rem 0rem;
           cursor: pointer;
-          color: $tertiary-color;
           @include poppins-font(500);
         }
       }

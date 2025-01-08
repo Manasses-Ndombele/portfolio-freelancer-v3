@@ -128,9 +128,7 @@ export default function ContactsContainer() {
                 />
                 <ErrorMessage component="span" name="project_description" />
               </div>
-              <div className="field-container">
-                <button type="submit">Enviar</button>
-              </div>
+              <button type="submit">Enviar</button>
             </Form>
           </Formik>
         </div>

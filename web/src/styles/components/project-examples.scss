@@ -1,6 +1,28 @@
 @use "../base/variables.scss" as *;
 
+html.light {
+  #projects-cta-container {
+    a {
+      color: $secondary-color;
+    }
+  }
+}
+
+html.dark {
+  #projects-examples {
+    .swiper-pagination-bullet {
+      background-color: $tertiary-color-b;
+    }
+
+    #projects-cta-container > a {
+      color: $tertiary-color;
+    }
+  }
+}
+
 #projects-examples {
+  margin-bottom: 2rem;
+
   #projects-examples-copy {
     padding: 1rem;
     text-align: center;
@@ -14,6 +36,10 @@
 
   #swiper-projects {
     padding: 1.5rem;
+
+    .swiper-button-prev {
+      z-index: 1;
+    }
   }
 
   #projects-cta-container {
@@ -22,17 +48,16 @@
     justify-content: center;
 
     a {
-        text-decoration: none;
-        color: $secondary-color;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: 1.1em;
-        @include poppins-font(500);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1.1em;
+      @include poppins-font(500);
 
-        span {
-            white-space: nowrap;
-        }
+      span {
+        white-space: nowrap;
+      }
     }
   }
 }

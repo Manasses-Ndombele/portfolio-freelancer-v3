@@ -1,9 +1,24 @@
 @use "../base/variables.scss" as *;
 
+html.light {
+  #services-container {
+    background-color: $primary-color;
+  }
+}
+
+html.dark {
+  #services-container {
+    background-color: $quinary-color;
+
+    h2 {
+      color: $primary-color-b;
+    }
+  }
+}
+
 #services-container {
-  background-color: $primary-color;
-  color: $tertiary-color;
   padding: 1rem;
+  color: $tertiary-color;
 
   #services-items {
     display: flex;

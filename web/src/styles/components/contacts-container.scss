@@ -1,7 +1,34 @@
 @use "../base/variables.scss" as *;
 
+html.dark {
+  #contacts-container {
+    background-image: linear-gradient(
+      to top,
+      $primary-color-b,
+      $quartenary-color
+    );
+
+    #budget-form-container {
+      button {
+        background-color: $quartenary-color;
+      }
+    }
+  }
+}
+
+html.light {
+  #contacts-container {
+    background-image: linear-gradient(to top, $primary-color-b, $primary-color);
+
+    #budget-form-container {
+      button {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
 #contacts-container {
-  background-image: linear-gradient(to top, $primary-color-b, $primary-color);
   padding: 0.5rem;
   margin: 1rem 0;
 
@@ -47,6 +74,10 @@
         text-transform: capitalize;
         @include montserrat-font();
       }
+
+      p {
+        color: $secondary-color;
+      }
     }
 
     #budget-form-container {
@@ -74,7 +105,7 @@
             @include poppins-font(400);
 
             &:focus {
-                outline: none;
+              outline: none;
             }
           }
 
@@ -85,7 +116,6 @@
         }
 
         button {
-          background-color: $secondary-color;
           padding: 0.6rem 0;
           border-radius: 22px;
           border: none;

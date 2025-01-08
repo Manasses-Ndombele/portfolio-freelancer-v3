@@ -1,8 +1,48 @@
 @use "../base/variables.scss" as *;
 
+html.light {
+  .project-card {
+    box-shadow: 0 0 4px $secondary-color;
+
+    .project-description {
+      background-color: $tertiary-color-b;
+
+      span.tag {
+        background-color: $tertiary-color;
+        border: 1px solid $secondary-color;
+      }
+
+      button.card-cta {
+        background-color: $secondary-color;
+        color: $tertiary-color;
+      }
+    }
+  }
+}
+
+html.dark {
+  .project-card {
+    box-shadow: 0 0 4px $secondary-color;
+
+    .project-description {
+      background-color: $quartenary-color;
+
+      span.tag {
+        background-color: $primary-color;
+        border: 1px solid $tertiary-color-b;
+        font-weight: bold;
+      }
+
+      button.card-cta {
+        background-color: $primary-color;
+        color: $tertiary-color;
+      }
+    }
+  }
+}
+
 .project-card {
   border-radius: 10px;
-  box-shadow: 0 0 4px $secondary-color;
   overflow: hidden;
   height: 30rem;
 
@@ -16,12 +56,12 @@
   }
 
   .project-description {
-    background-color: $tertiary-color-b;
     padding: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 40%;
+    border-radius: 0 0 10px 10px;
 
     h4 {
       font-size: 1.2em;
@@ -35,8 +75,6 @@
       flex-wrap: wrap;
 
       span.tag {
-        background-color: $tertiary-color;
-        border: 1px solid $secondary-color;
         padding: 0.3rem 0.5rem;
         border-radius: 10px;
         font-size: 0.7em;
@@ -49,14 +87,12 @@
       width: 100%;
 
       button.card-cta {
-        background-color: $secondary-color;
         padding: 0.6rem 0;
         border-radius: 22px;
         border: none;
         width: 100%;
         font-size: 1.1em;
         cursor: pointer;
-        color: $tertiary-color;
         @include poppins-font(500);
       }
     }
