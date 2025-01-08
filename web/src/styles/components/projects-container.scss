@@ -5,4 +5,18 @@
     display: grid;
     grid-template-columns: 100%;
     gap: 1.5rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    @include md() {
+        gap: 2rem;
+        min-width: 90%;
+        grid-template-columns: 45% 45%;
+        justify-content: space-between;
+    }
+
+    @include lg() {
+        grid-template-columns: 32% 32% 32%;
+        grid-row-gap: 2.5rem;
+        grid-column-gap: 0rem;
+    }
 }

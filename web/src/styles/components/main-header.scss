@@ -2,9 +2,18 @@
 
 html.light {
   header#main-header {
+    @include md() {
+      background-color: $tertiary-color-b;
+      box-shadow: 0px 0px 2px $secondary-color;
+    }
+
     #header-main-layout {
       background-color: $tertiary-color-b;
       box-shadow: 0px 0px 2px $secondary-color;
+      @include md() {
+        background-color: transparent;
+        box-shadow: none;
+      }
 
       strong {
         color: $secondary-color;
@@ -38,8 +47,15 @@ html.light {
 
 html.dark {
   header#main-header {
+    @include md() {
+      background-color: $tertiary-color;
+    }
+
     #header-main-layout {
       background-color: $tertiary-color;
+      @include md() {
+        background-color: transparent;
+      }
 
       strong {
         color: $quartenary-color;
@@ -84,14 +100,30 @@ html.dark {
 }
 
 header#main-header {
+  @include md() {
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  @include lg() {
+    width: 95%;
+    margin: 1rem auto 0 auto;
+    border-radius: 15px;
+    max-width: 1100px;
+  }
+
   #header-main-layout {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    @include md() {
+      padding: 1rem 0 1rem 0.4rem;
+    }
 
     a {
       text-decoration: none;
+      white-space: nowrap;
 
       span {
         color: $primary-color-b;
@@ -101,9 +133,12 @@ header#main-header {
 
   button.menu-btn {
     border: none;
-    font-size: 1.3em;
+    font-size: 1.5em;
     padding: 0;
     cursor: pointer;
+    @include md() {
+      display: none !important;
+    }
   }
 
   #header-options {
@@ -115,6 +150,17 @@ header#main-header {
     height: 100vh;
     transform: translateY(-100vh);
     transition: all 0.4s ease-in;
+    @include md() {
+      position: static;
+      width: 100%;
+      height: min-content;
+      transform: none;
+      opacity: 1;
+      background-color: transparent !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     &.opened {
       transform: none;
@@ -133,6 +179,14 @@ header#main-header {
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      @include md() {
+        flex-direction: row;
+        gap: 0.6rem;
+      }
+
+      @include lg {
+        gap: 1.2rem;
+      }
 
       a {
         text-decoration: none;
@@ -142,18 +196,32 @@ header#main-header {
 
     menu {
       padding: 1rem;
-      margin: 0;
+      margin: 0 auto;
+      max-width: 22rem;
+      @include md() {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0.5rem;
+      }
 
       form {
         display: flex;
         flex-direction: column;
         gap: 0.6rem;
         margin-top: 0.8rem;
+        @include md() {
+          margin-top: 0;
+        }
 
         label {
           display: flex;
           align-items: center;
           gap: 0.4rem;
+          @include md() {
+            display: none;
+          }
         }
 
         select {
@@ -162,6 +230,13 @@ header#main-header {
           padding: 0.5rem 1rem;
           cursor: pointer;
           @include poppins-font(400);
+          @include md() {
+            width: 7rem;
+          }
+
+          @include lg() {
+            width: 10rem;
+          }
         }
       }
 
@@ -176,12 +251,20 @@ header#main-header {
         justify-content: center;
         gap: 0.4rem;
         cursor: pointer;
+        white-space: nowrap;
         @include poppins-font(400);
+        @include md() {
+          padding: 0.5rem;
+          margin: 0;
+        }
       }
 
       a {
         display: block;
         margin-top: 0.5rem;
+        @include md() {
+          display: none;
+        }
 
         button.main-cta {
           width: 100%;

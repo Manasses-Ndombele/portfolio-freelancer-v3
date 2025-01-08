@@ -2,11 +2,24 @@
 
 #main-copy-container {
   padding: 0 1rem;
+  @include md() {
+    padding: 0 2rem;
+  }
 
   h1 {
     color: $primary-color;
     text-transform: capitalize;
     margin: 10px 0 !important;
     @include montserrat-font();
+  }
+
+  p {
+    @include md() {
+      max-width: 42rem;
+    }
+
+    @include lg() {
+      max-width: 55rem;
+    }
   }
 }

@@ -18,6 +18,10 @@ html.dark {
 #search-container {
   padding: 0 1rem;
   margin-bottom: 1rem;
+  max-width: 25rem;
+  @include md() {
+    padding: 0 2rem;
+  }
 
   label {
     @include poppins-font(500);

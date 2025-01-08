@@ -31,6 +31,16 @@ html.light {
 #contacts-container {
   padding: 0.5rem;
   margin: 1rem 0;
+  @include md() {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  @include lg() {
+    justify-content: space-around;
+  }
 
   #social-area {
     color: $tertiary-color;
@@ -38,6 +48,9 @@ html.light {
     h2 {
       @include montserrat-font();
       text-align: center;
+      @include md() {
+        text-align: left;
+      }
     }
 
     #social-container {
@@ -46,6 +59,9 @@ html.light {
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
+        @include md() {
+          justify-content: start;
+        }
 
         a {
           font-size: 1.5em;
@@ -58,6 +74,9 @@ html.light {
       p {
         text-align: center;
         font-size: 0.9em;
+        @include md() {
+          text-align: left;
+        }
       }
     }
   }
@@ -67,6 +86,15 @@ html.light {
     border-radius: 10px;
     padding: 0.8rem;
     box-shadow: 0 0 4px $primary-color-b;
+    max-width: 30rem;
+    margin: 0 auto;
+    @include md() {
+      margin: 0.6rem;
+    }
+
+    @include lg() {
+      max-width: 30rem;
+    }
 
     #budget-container-copy {
       h2 {
@@ -124,6 +152,7 @@ html.light {
           cursor: pointer;
           color: $tertiary-color;
           margin-top: 10px;
+          max-width: 14rem;
           @include poppins-font(600);
         }
       }

@@ -19,3 +19,21 @@ $quinary-color: #5c5858;
   font-family: "Poppins", sans-serif;
   font-weight: $weight;
 }
+
+@mixin md() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

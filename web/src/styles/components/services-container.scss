@@ -20,15 +20,42 @@ html.dark {
   padding: 1rem;
   color: $tertiary-color;
 
+  #services-copy {
+    h2 {
+      @include md() {
+        text-align: center;
+      }
+    }
+
+    p {
+      max-width: 40rem;
+      @include md() {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
   #services-items {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
+    @include lg() {
+      max-width: 1000px;
+      margin: 3rem auto;
+      justify-content: space-around;
+    }
 
     .service-item {
       text-align: center;
+      max-width: 22rem;
+      margin: 0 auto;
+      @include lg() {
+        max-width: 30rem;
+        margin: 0;
+      }
 
       svg {
         font-size: 2.2em;

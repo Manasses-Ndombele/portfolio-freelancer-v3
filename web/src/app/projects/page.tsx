@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <main>
+    <main id="main-projects">
       <HomeLinkContainer />
       <ProjectsMainCopy />
       <SearchContainer />

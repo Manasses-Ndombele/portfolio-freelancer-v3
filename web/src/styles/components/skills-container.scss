@@ -76,6 +76,9 @@ html.dark {
   margin-top: 3rem;
 
   #skills-copy {
+    margin: 0 auto;
+    max-width: 35rem;
+
     h2 {
       text-align: center;
       text-transform: capitalize;
@@ -91,6 +94,11 @@ html.dark {
   #skills-categories {
     padding: 1rem 0rem;
     position: relative;
+    max-width: 40rem;
+    margin: 0 auto;
+    @include md() {
+      max-width: 100%;
+    }
 
     &::before {
       content: "";
@@ -100,6 +108,9 @@ html.dark {
       position: absolute;
       top: 0;
       left: 0;
+      @include md() {
+        display: none;
+      }
     }
 
     &::after {
@@ -110,9 +121,21 @@ html.dark {
       position: absolute;
       top: 0;
       right: 0;
+      @include md() {
+        display: none;
+      }
     }
 
     .skills-category {
+      @include md() {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include lg() {
+        width: 90%;
+      }
+
       h3 {
         text-align: center;
         margin-bottom: 1rem;
@@ -134,12 +157,36 @@ html.dark {
           align-items: start;
           gap: 1.5rem;
           animation: infinite-slider 10s linear infinite;
+          @include md() {
+            animation: none;
+            &:first-of-type {
+              align-items: center;
+              gap: 2rem;
+              flex-wrap: wrap;
+              justify-content: center;
+              width: 90%;
+              margin: 0 auto;
+            }
+
+            &:last-of-type {
+              display: none;
+            }
+          }
+
+          @include lg() {
+            &:first-of-type {
+              width: 100%;
+            }
+          }
 
           .skill-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
+            @include md() {
+              width: min-content;
+            }
 
             svg {
               font-size: 2em;
@@ -147,6 +194,9 @@ html.dark {
 
             p {
               text-align: center;
+              @include md() {
+                white-space: nowrap;
+              }
             }
           }
         }

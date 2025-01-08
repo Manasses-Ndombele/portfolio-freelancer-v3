@@ -29,6 +29,15 @@ export default function ProjectsExamples() {
         spaceBetween={50}
         speed={1500}
         pagination={{ clickable: true }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }}
         onSlideChange={() => {
           console.log("slide change");
         }}
