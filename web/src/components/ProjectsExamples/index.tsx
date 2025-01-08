@@ -8,6 +8,7 @@ import ProjectCard from "@/components/ProjectCard";
 import project1 from "@/assets/project-example-1.gif";
 import project2 from "@/assets/project-example-2.gif";
 import project3 from "@/assets/project-example-3.gif";
+import { data } from "@/data/projects";
 import "swiper/swiper-bundle.css";
 import "@/styles/components/project-examples.scss";
 
@@ -35,8 +36,8 @@ export default function ProjectsExamples() {
           },
           992: {
             slidesPerView: 3,
-            spaceBetween: 20
-          }
+            spaceBetween: 20,
+          },
         }}
         onSlideChange={() => {
           console.log("slide change");
@@ -48,24 +49,24 @@ export default function ProjectsExamples() {
         <SwiperSlide>
           <ProjectCard
             imgSrc={project1}
-            projectName="Emagrecimento Sem Segredos"
-            tags={["Landing page", "Site de vendas"]}
+            projectName={data[0].name}
+            tags={data[0].categories}
             styleClass="card-a"
           />
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
             imgSrc={project2}
-            projectName="EDEN Hotels"
-            tags={["Site institucional", "Site para branding", "Sistema web"]}
+            projectName={data[0].name}
+            tags={data[0].categories}
             styleClass="card-a"
           />
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
             imgSrc={project3}
-            projectName="VR Motion"
-            tags={["Loja online", "Site de vendas"]}
+            projectName={data[0].name}
+            tags={data[0].categories}
             styleClass="card-a"
           />
         </SwiperSlide>

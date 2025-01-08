@@ -17,16 +17,20 @@ export default function ProjectCard({
 }: ProjectCardType) {
   const { openProject } = useProject();
   return (
-    <div className={`project-card ${styleClass}`} >
+    <div className={`project-card ${styleClass}`}>
       <div className="project-img">
         <Image src={imgSrc} alt="Projeto de portfólio" />
       </div>
       <div className="project-description">
         <h4>{projectName}</h4>
-        <p className="tags">
-          {tags.map((tag, _key) => (
-            <span key={`${_key}`} className="tag">
-              {tag}
+        <p
+          className={`tags ${tags.categoriesKeys
+            .toString()
+            .replaceAll(",", " ")}`}
+        >
+          {tags.categoriesValues.map((value, index) => (
+            <span key={index} className="tag">
+              {value}
             </span>
           ))}
         </p>

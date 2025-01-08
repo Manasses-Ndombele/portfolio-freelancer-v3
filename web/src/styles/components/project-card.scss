@@ -55,6 +55,50 @@ html.dark {
 }
 
 .project-card {
+  &.card-a {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30rem;
+
+    .project-description {
+      padding: 0.7rem;
+      border-radius: 0 0 10px 10px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &.card-b {
+    height: 26rem;
+    border-radius: 20px;
+
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .project-description {
+      padding: 1rem;
+
+      span.tag {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+      }
+
+      button.card-cta {
+        background-color: $primary-color-b;
+        color: $tertiary-color;
+      }
+    }
+  }
+
+  &.card-hidden {
+    display: none;
+  }
+
   .project-img {
     height: 50%;
 
@@ -97,46 +141,6 @@ html.dark {
       font-size: 1.1em;
       cursor: pointer;
       @include poppins-font(500);
-    }
-  }
-
-  &.card-a {
-    border-radius: 10px;
-    overflow: hidden;
-    height: 30rem;
-
-    .project-description {
-      padding: 0.7rem;
-      border-radius: 0 0 10px 10px;
-    }
-
-    a {
-      display: block;
-      width: 100%;
-    }
-  }
-
-  &.card-b {
-    height: 26rem;
-    border-radius: 20px;
-
-    img {
-      border-radius: 20px;
-      object-fit: cover;
-    }
-
-    .project-description {
-      padding: 1rem;
-
-      span.tag {
-        background-color: transparent;
-        border: 1px solid $secondary-color;
-      }
-
-      button.card-cta {
-        background-color: $primary-color-b;
-        color: $tertiary-color;
-      }
     }
   }
 }

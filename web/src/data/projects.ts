@@ -12,7 +12,10 @@ import { Project } from "@/types/Project";
 export const data: Project[] = [
   {
     name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    categories: {
+      categoriesKeys: ["sales", "landingPage"],
+      categoriesValues: ["Site de vendas", "Landing page"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project1,
@@ -20,8 +23,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "Borges Consulting",
+    categories: {
+      categoriesKeys: ["branding", "institutional"],
+      categoriesValues: ["Site para branding", "Site institucional"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project2,
@@ -29,8 +35,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "VR Motion",
+    categories: {
+      categoriesKeys: ["sales", "ecommerce"],
+      categoriesValues: ["Site de vendas", "Loja online"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project3,
@@ -38,8 +47,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "Quiz da Socorre.me",
+    categories: {
+      categoriesKeys: ["others"],
+      categoriesValues: ["Outros"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project4,
@@ -47,8 +59,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "Automails",
+    categories: {
+      categoriesKeys: ["webSystems"],
+      categoriesValues: ["Sistema web"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project5,
@@ -56,8 +71,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "CriptoHacking",
+    categories: {
+      categoriesKeys: ["sales", "landingPage"],
+      categoriesValues: ["Site de vendas", "Landing page"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project6,
@@ -65,8 +83,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "Borges Company",
+    categories: {
+      categoriesKeys: ["branding", "institutional"],
+      categoriesValues: ["Site para branding", "Site institucional"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project7,
@@ -74,8 +95,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "FoodBoard",
+    categories: {
+      categoriesKeys: ["automations", "others"],
+      categoriesValues: ["Automações", "Outros"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project8,
@@ -83,8 +107,11 @@ export const data: Project[] = [
     link: "https://manassesndombele.vercel.app/",
   },
   {
-    name: "Emagrecimento sem segredos",
-    categories: ["Site de vendas", "Landing page"],
+    name: "YourNextFilms",
+    categories: {
+      categoriesKeys: ["automations", "others"],
+      categoriesValues: ["Automações", "Outros"],
+    },
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project9,
