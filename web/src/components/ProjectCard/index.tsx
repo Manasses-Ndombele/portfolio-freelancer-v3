@@ -1,40 +1,31 @@
 "use client";
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useProject } from "@/context/ProjectContext";
+import { ProjectCardType } from "@/types/ProjectCard";
 import "@/styles/components/project-card.scss";
 
-interface Props {
-  imageSource: StaticImageData;
-  projectName: string;
-  tags: ReadonlyArray<string>;
-  styleClass: string;
-  projectDescription?: string;
-  projectGithub?: string;
-  projectLink?: string;
-}
-
 export default function ProjectCard({
-  imageSource,
+  imgSrc,
   projectName,
   tags,
   styleClass,
-  projectDescription="",
-  projectGithub="",
-  projectLink=""
-}: Props) {
+  projectDescription = "",
+  projectGithub = "",
+  projectLink = "",
+}: ProjectCardType) {
   const { openProject } = useProject();
   return (
-    <div className={`project-card ${styleClass}`}>
+    <div className={`project-card ${styleClass}`} >
       <div className="project-img">
-        <Image src={imageSource} alt="Projeto de portfólio" />
+        <Image src={imgSrc} alt="Projeto de portfólio" />
       </div>
       <div className="project-description">
         <h4>{projectName}</h4>
         <p className="tags">
-          {tags.map((tag, key) => (
-            <span key={`${key}`} className="tag">
+          {tags.map((tag, _key) => (
+            <span key={`${_key}`} className="tag">
               {tag}
             </span>
           ))}
@@ -54,7 +45,7 @@ export default function ProjectCard({
                 projectTitle: projectName,
                 projectDescription: projectDescription,
                 projectGithub: projectGithub,
-                projectLink: projectLink
+                projectLink: projectLink,
               });
             }}
           >

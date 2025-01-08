@@ -47,7 +47,7 @@ export default function ProjectsExamples() {
       >
         <SwiperSlide>
           <ProjectCard
-            imageSource={project1}
+            imgSrc={project1}
             projectName="Emagrecimento Sem Segredos"
             tags={["Landing page", "Site de vendas"]}
             styleClass="card-a"
@@ -55,7 +55,7 @@ export default function ProjectsExamples() {
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
-            imageSource={project2}
+            imgSrc={project2}
             projectName="EDEN Hotels"
             tags={["Site institucional", "Site para branding", "Sistema web"]}
             styleClass="card-a"
@@ -63,7 +63,7 @@ export default function ProjectsExamples() {
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
-            imageSource={project3}
+            imgSrc={project3}
             projectName="VR Motion"
             tags={["Loja online", "Site de vendas"]}
             styleClass="card-a"

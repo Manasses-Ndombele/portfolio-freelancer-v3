@@ -1,17 +1,7 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
-
-interface ProjectType {
-  projectTitle: string;
-  projectDescription: string;
-  projectGithub: string;
-  projectLink: string;
-}
-
-type ProjectContextType = {
-  project: ProjectType;
-  openProject: (project: ProjectType) => void;
-};
+import { ProjectType } from "@/types/ProjectType";
+import { ProjectContextType } from "@/types/ProjectContextType";
 
 const ProjectContext = createContext<ProjectContextType | undefined>(undefined);
 
