@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTelegram, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useTranslation } from "react-i18next";
@@ -56,6 +56,13 @@ export default function ContactsContainer() {
         <div id="social-container">
           <h2>{t("contacts-container.social.title-a")}</h2>
           <nav>
+          <Link
+              href="https://www.instagram.com/manassesalbertondombele"
+              target="_blank"
+              rel="external"
+            >
+              <FaInstagram />
+            </Link>
             <Link
               href="https://github.com/Manasses-Ndombele/"
               target="_blank"

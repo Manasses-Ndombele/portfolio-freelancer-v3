@@ -8,11 +8,3 @@ body {
   transition: background-color 1s ease-in;
   @include poppins-font(400);
 }
-
-button {
-  transition: all 0.3s ease-out !important;
-
-  &:hover {
-    transform: scale(1.03);
-  }
-}

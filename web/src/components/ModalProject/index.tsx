@@ -19,16 +19,23 @@ export default function ModalProject() {
       project.projectSkills.length !== 0
     ) {
       setModalStatus("");
+      window.document.body.style.overflowY = "hidden";
     }
   }, [project]);
 
   const closeModal = (): void => {
     setModalStatus("closed");
+    window.document.body.style.overflowY = "auto";
   };
 
   const handleOverlayClick = (e: MouseEvent<HTMLDivElement>): void => {
     if ((e.target as HTMLElement).id === "modal-overlay") {
-      closeModal();
+      const modal = document.querySelector("#modal-project");
+      modal?.classList.add("closing");
+      setTimeout(() => {
+        closeModal();
+        modal?.classList.remove("closing");
+      }, 500);
     }
   };
 

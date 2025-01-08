@@ -29,7 +29,7 @@ export const data: Project[] = [
     name: "EDEN Hotels",
     categories: {
       categoriesKeys: ["branding", "institutional", "webSystems"],
-      categoriesValues: ["projectCard2.category1", "projectCard2.category2", "project.Card2.category3"],
+      categoriesValues: ["projectCard2.category1", "projectCard2.category2", "projectCard2.category3"],
     },
     description: "projectCard2.description",
     technologies: ["ReactJS", "TailwindCSS", "PHP", "TypeScript"],

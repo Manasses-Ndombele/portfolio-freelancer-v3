@@ -66,6 +66,11 @@ html.light {
         a {
           font-size: 1.5em;
           color: $tertiary-color-b;
+          transition: transform 0.3s ease-in;
+
+          &:hover {
+            transform: scale(1.03);
+          }
         }
       }
     }

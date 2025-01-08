@@ -58,10 +58,6 @@ html.dark {
 
   &.closed {
     display: none;
-
-    #modal-project {
-      opacity: 0;
-    }
   }
 
   #modal-project {
@@ -70,10 +66,12 @@ html.dark {
     width: 85%;
     margin: 0 auto;
     max-width: 600px;
-    height: 70%;
+    height: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    overflow-y: scroll;
+    transition: opacity 0.3s ease-in;
 
     @include md() {
       height: 60%;
@@ -81,6 +79,10 @@ html.dark {
 
     @include lg() {
       height: 50%;
+    }
+
+    &.closing {
+      opacity: 0;
     }
 
     h3 {
@@ -102,8 +104,9 @@ html.dark {
       }
 
       span {
-        padding: 0.8rem;
+        padding: 0.5rem;
         border-radius: 1rem;
+        font-size: 0.8em;
       }
     }
 
@@ -135,6 +138,11 @@ html.dark {
           background-color: $primary-color;
           color: $tertiary-color-b;
           @include poppins-font(500);
+          transition: transform 0.3s ease-in;
+
+          &:hover {
+            transform: scale(1.03);
+          }
         }
       }
     }

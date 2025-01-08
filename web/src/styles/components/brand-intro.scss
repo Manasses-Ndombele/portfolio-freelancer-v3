@@ -9,6 +9,13 @@ html.light {
         color: $primary-color;
       }
     }
+
+    button.main-cta:hover {
+      color: $secondary-color !important;
+      border: 3px solid $primary-color-b !important;
+      background-image: none !important;
+      background-color: transparent !important;
+    }
   }
 
   #video-shadow {
@@ -26,6 +33,13 @@ html.dark {
   #brand-intro-content {
     h1 {
       color: $primary-color-b;
+    }
+
+    button.main-cta:hover {
+      border: 3px solid $primary-color !important;
+      background-image: none !important;
+      background-color: transparent !important;
+      box-shadow: 2px 2px 10px $primary-color;
     }
   }
 }
@@ -81,8 +95,10 @@ html.dark {
           $primary-color-b,
           $primary-color
         );
+
         color: $tertiary-color;
         max-width: 20rem;
+        transition: all 0.4s ease-in;
         @include poppins-font(500);
       }
     }

@@ -12,6 +12,11 @@ function MainHeader() {
   const { theme, toggleTheme } = useTheme();
   const [menuStatus, setMenuStatus] = useState("");
   const { t } = useTranslation();
+  const closeMenu = () => {
+    setMenuStatus("");
+    window.document.body.style.overflowY = "auto";
+  };
+
   return (
     <header id="main-header">
       <div id="header-main-layout">
@@ -25,6 +30,7 @@ function MainHeader() {
           className="menu-btn"
           onClick={() => {
             setMenuStatus("opened");
+            window.document.body.style.overflowY = "hidden";
           }}
         >
           <MdMenu />
@@ -32,29 +38,31 @@ function MainHeader() {
       </div>
       <div id="header-options" className={`${menuStatus}`}>
         <div id="header-close-action-container">
-          <button
-            type="button"
-            className="menu-btn"
-            onClick={() => {
-              setMenuStatus("");
-            }}
-          >
+          <button type="button" className="menu-btn" onClick={closeMenu}>
             <MdClose />
           </button>
         </div>
         <nav>
-          <Link href="/#services-container">{t("main-nav.link-a")}</Link>
-          <Link href="/projects">{t("main-nav.link-b")}</Link>
-          <Link href="/#about-container">{t("main-nav.link-c")}</Link>
-          <Link href="/#contacts-container">{t("main-nav.link-d")}</Link>
+          <Link href="/#services-container" onClick={closeMenu}>
+            {t("main-nav.link-a")}
+          </Link>
+          <Link href="/projects" onClick={closeMenu}>
+            {t("main-nav.link-b")}
+          </Link>
+          <Link href="/#about-container" onClick={closeMenu}>
+            {t("main-nav.link-c")}
+          </Link>
+          <Link href="/#contacts-container" onClick={closeMenu}>
+            {t("main-nav.link-d")}
+          </Link>
         </nav>
         <menu type="toolbar">
-          <LangSwitcher />
+          <LangSwitcher setMenuStatus={setMenuStatus} />
           {theme === "light" ? (
             <button
               id="theme-btn"
               onClick={() => {
-                setMenuStatus("");
+                closeMenu();
                 toggleTheme();
               }}
             >
@@ -65,7 +73,7 @@ function MainHeader() {
             <button
               id="theme-btn"
               onClick={() => {
-                setMenuStatus("");
+                closeMenu();
                 toggleTheme();
               }}
             >
@@ -77,9 +85,7 @@ function MainHeader() {
             <button
               type="button"
               className="main-cta"
-              onClick={() => {
-                setMenuStatus("");
-              }}
+              onClick={closeMenu}
             >
               {t("main-copy.cta-btn")}
             </button>
