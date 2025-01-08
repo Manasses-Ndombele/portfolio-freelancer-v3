@@ -18,8 +18,8 @@ export default function ProjectsExamples() {
       <div id="projects-examples-copy">
         <h2>Meus projetos</h2>
         <p>
-          Nada melhor do que ver para crer, aqui estão alguns projetos que
-          comprovam minhas habilidades!
+          Aqui estão alguns projetos que comprovam minhas habilidades na prática
+          pois como diz o ditado é necessário ver para crer.
         </p>
       </div>
       <Swiper

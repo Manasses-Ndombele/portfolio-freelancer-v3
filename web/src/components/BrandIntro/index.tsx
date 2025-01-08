@@ -13,12 +13,16 @@ function BrandIntro() {
   return (
     <div id="brand-intro">
       <div id="brand-intro-content">
-        <h1>Programação eficaz com paixão e propósito!</h1>
+        <h1>
+          Criando projetos pensados no detalhe,{" "}
+          <strong>criado para vender</strong>
+        </h1>
         <p>
-          Todo mundo pode escrever um código mas eu me foco em criar soluções!
-          Procuro entender primeiramente qual problema precisa ser resolvido de
-          forma detalhada e depois avalio suas necessidades para que no final
-          seja entregue uma solução para os seus clientes!
+          Mais do que escrever código, eu mergulho nos detalhes que levam os
+          usuários a interagirem de forma intuitiva com meus projetos. Cada cor,
+          posição, imagem, animação tem um porquê! Desta forma eu crio soluções
+          vendáveis para que você possa ter um resultado final que você possa
+          chamar orgulhosamente de seu!
         </p>
         <Link href="#contacts-container">
           <button type="button" className="main-cta">

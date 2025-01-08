@@ -10,9 +10,9 @@ function ServicesContainer() {
       <div id="services-copy">
         <h2>O que eu posso fazer por você?</h2>
         <p>
-          Para mim toda a idéia pode ser transformada em um código, e todo
-          código pode ser transformado em uma solução para o mercado! Eis
-          algumas das soluções que posso prover:
+          Toda a idéia pode ser transformada em um código, e todo código pode
+          ser transformado em uma solução para o mercado! Eis algumas das
+          soluções que posso prover:
         </p>
       </div>
       <div id="services-items">
@@ -20,40 +20,43 @@ function ServicesContainer() {
           <FaMoneyBillTrendUp />
           <h3>Site de vendas</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolorem
-            nemo vel obcaecati, nisi incidunt quibusdam quod sapiente quaerat
-            maiores facere accusantium quo nulla deserunt, a officia eos at
-            nostrum.
+            Uma das minhas especialidades é o desenvolvimento de páginas de
+            vendas e lojas online onde o foco principal é a venda de um produto
+            ou serviço, geralmente apresentados com um design arrojado e
+            modelados para o público alvo do vendedor.
           </p>
         </div>
         <div className="service-item">
           <BsApple />
           <h3>Site para branding</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            maiores dicta accusantium blanditiis consequatur quam dignissimos
-            nemo voluptate voluptates repellendus dolorum repudiandae adipisci,
-            fugiat nihil, corporis veniam quaerat! Earum, commodi.
+            Como resposta a alta demanda por sites que têm o objetivo de passar
+            uma mensagem consistente com a identidade visual de uma marca
+            trabalho na prestação do serviço de criação de sites institucionais!
+            Se você deseja um site que reflita a sua marca este serviço é
+            perfeito para si.
           </p>
         </div>
         <div className="service-item">
           <IoConstruct />
           <h3>Sistemas web</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            maiores dicta accusantium blanditiis consequatur quam dignissimos
-            nemo voluptate voluptates repellendus dolorum repudiandae adipisci,
-            fugiat nihil, corporis veniam quaerat! Earum, commodi.
+            Poucos desenvolvedores conseguem alcançar a excelência em design,
+            segurança e eficiência em sistemas web, sites que têm uma
+            funcionalidade em específica ou diversas são o desafio que superei e
+            posso diligentemente sarar essa grande dor nesse mercado
+            adequadamente.
           </p>
         </div>
         <div className="service-item">
           <RiRobot2Fill />
           <h3>Automações</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            maiores dicta accusantium blanditiis consequatur quam dignissimos
-            nemo voluptate voluptates repellendus dolorum repudiandae adipisci,
-            fugiat nihil, corporis veniam quaerat! Earum, commodi.
+            Em especial através da linguagem Python sou capaz de criar bots,
+            fazer integrações com APIs, manipular planilhas do Excel, etc. Para
+            criar uma solução bem específica para resolver tarefas repetitivas
+            do seu dia à dia de trabalho. Toda tarefa pode ser automatizada para
+            aumentar a produtividade e performance do seu negócio.
           </p>
         </div>
       </div>

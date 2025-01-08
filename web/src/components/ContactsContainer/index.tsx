@@ -58,13 +58,12 @@ export default function ContactsContainer() {
       </div>
       <div id="budget-container">
         <div id="budget-container-copy">
-          <h2>Peça já um orçamento!</h2>
+          <h2>Vamos tirar a sua ideia do papel?</h2>
           <p>
-            Insira seus dados e descreva seu projeto para mim, eu vou analisar o
-            seu projeto e irei te enviar o orçamento através do contato
-            fornecido o mais rápido possível! Então envia já os seus dados para
-            darmos os primeiros passos para que a sua idéia possa ser
-            transformada em realidade!
+            Preencha os seus dados e descreva o seu projeto. Vou analisar tudo
+            com atenção e te enviar um orçamento o quanto antes, através do
+            contacto informado. Esse é o primeiro passo para transformar sua
+            ideia em uma solução real.
           </p>
         </div>
         <div id="budget-form-container">

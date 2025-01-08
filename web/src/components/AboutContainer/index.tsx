@@ -14,17 +14,23 @@ export default function AboutContainer() {
       <div id="about-copy">
         <h2>Sobre mim</h2>
         <p>
-          Minha história como programador começou em 2020, motivada por um
-          desejo de aprender Segurança da informação (Hacking) começando com o
-          aprendizado autodidata de Python. O que começou como uma curiosidade
-          sobre segurança da informação rapidamente evoluiu para uma paixão por
-          criar e programar. Ao longo dessa trajetória, conquistei certificações
-          importantes, como as de Python, HTML5, JavaScript, MySQL, SEO,
-          Marketing digital... Com destaque para formações do Curso em Vídeo do
-          professor Gustavo Guanabara. Essas qualificações, aliadas à minha
-          experiência prática, moldaram-me como um profissional focado em
-          resultados. Hoje meu objetivo principal é transformar códigos em
-          degraus para que o seu negócio possa escalar!
+          Tudo começou em 2019, quando fui atrás daquilo que me fascinava:
+          computadores. Meu plano incial era entrar para a área de segurança da
+          informação, parecia o caminho perfeito para alguém curioso. Mas aí
+          veio um detalhe: eu precisava aprender a programar. Foi nesse momento
+          que descubri um novo universo. A lógica por trás do código, a
+          liberdade de criar do zero, a sensação de ver uma ideia ganhar forma
+          na tela...
+        </p>
+        <p>
+          O que era só um requesito virou paixão. De lá pra cá, não parei mais.
+          Estudei, testei, quebrei a cabeça várias vezes, e construí projetos
+          que me levaram por caminhos incríveis: desenvolvimento web,
+          automações, desktop e mobile... Hoje tenho a bagagem cheia de
+          linguagens, frameworks, bibliotecas, etc. E um entusiasmo que só
+          cresce. O café ajuda, claro, mas o que me move de verdade é a vontade
+          de criar soluções eficazes. Se você também acredita que boas ideias
+          merecem ser bem executadas, nós temos algo em comum!
         </p>
       </div>
     </div>

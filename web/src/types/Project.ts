@@ -29,6 +29,7 @@ export interface Project {
   name: string;
   categories: ProjectCategory;
   description: string;
+  technologies: string[];
   img: StaticImageData;
   github: string;
   link: string;

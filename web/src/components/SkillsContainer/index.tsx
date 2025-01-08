@@ -29,9 +29,10 @@ export default function SkillsContainer() {
       <div id="skills-copy">
         <h2>Minhas habilidades</h2>
         <p>
-          <strong>AVISO:</strong> Esta é a parte deste portfólio com constantes
-          atualizações pois as minhas habilidades vem se aprimorando a cada dia
-          para fazer o melhor serviço com as melhores ferramentas!
+          Esta é a área do portfólio que venho atualizar a todo o momento
+          com o maior orgulho e prazer do mundo, porque acredito no aprendizado
+          autodidata e que o uso das melhores ferramentas têm como consequência
+          os melhores resultados para si.
         </p>
       </div>
       <div id="skills-categories">

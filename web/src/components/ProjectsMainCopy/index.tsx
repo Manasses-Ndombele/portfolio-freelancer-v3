@@ -3,12 +3,11 @@ import "@/styles/components/projects-main-copy.scss";
 export default function ProjectsMainCopy() {
   return (
     <div id="main-copy-container">
-      <h1>Todos projetos</h1>
+      <h1>Explorar projetos</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-        harum, ex quasi rem quisquam maiores libero quas aliquam voluptas omnis
-        distinctio facere blanditiis facilis odio. Amet labore doloribus ab
-        quia.
+        Tenha a total liberdade para analisar, criticar e acessar os projetos
+        disponíveis para si bem como seus repositórios disponíveis no Github sob
+        licença MIT.
       </p>
     </div>
   );
