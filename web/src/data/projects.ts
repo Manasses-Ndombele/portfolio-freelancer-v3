@@ -19,8 +19,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project1,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/ESS-Landing-Page",
+    link: "http://emagrecimento-sem-segredos.vercel.app",
   },
   {
     name: "Borges Consulting",
@@ -31,8 +31,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project2,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/Borges-Consulting",
+    link: "https://borges-consulting.vercel.app/",
   },
   {
     name: "VR Motion",
@@ -43,8 +43,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project3,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/VR-Motion",
+    link: "https://vr-motion.vercel.app/",
   },
   {
     name: "Quiz da Socorre.me",
@@ -55,8 +55,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project4,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/TVC-Quiz",
+    link: "https://socorre.me/quiz/pages",
   },
   {
     name: "Automails",
@@ -67,8 +67,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project5,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/AutoMails",
+    link: "https://automails.vercel.app/",
   },
   {
     name: "CriptoHacking",
@@ -79,8 +79,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project6,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/Criptohacking",
+    link: "https://criptohacking-sg0s.onrender.com",
   },
   {
     name: "Borges Company",
@@ -91,8 +91,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project7,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/Borges-Company/",
+    link: "https://borges-company-1c97.onrender.com",
   },
   {
     name: "FoodBoard",
@@ -103,8 +103,8 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project8,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "http://github.com/Manasses-Ndombele/FoodBoard/",
+    link: "https://drive.google.com/file/d/1K28sSLdKTub67kWjkp6SMaAu6H63yyGn/view?usp=drive_link",
   },
   {
     name: "YourNextFilms",
@@ -115,7 +115,7 @@ export const data: Project[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?",
     img: project9,
-    github: "https://www.github.com/Manasses-Ndombele?tab=repositories",
-    link: "https://manassesndombele.vercel.app/",
+    github: "https://github.com/Manasses-Ndombele/YourNextFilms/",
+    link: "https://drive.google.com/file/d/1KAjvzSWeMHIXWW0rPnj4njdspxKMG47d/view?usp=drive_link",
   },
 ];

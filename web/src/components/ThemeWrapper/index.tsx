@@ -9,7 +9,7 @@ export default function ThemeWrapper({
 }) {
   const { theme } = useTheme();
   useEffect(() => {
-    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.remove("light", "dark", "none");
     document.documentElement.classList.add(theme);
   }, [theme]);
 

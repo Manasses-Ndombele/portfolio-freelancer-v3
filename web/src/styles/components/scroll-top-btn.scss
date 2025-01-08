@@ -17,6 +17,11 @@ html.dark {
   bottom: 10px;
   left: 10px;
   z-index: 2;
+  display: none;
+
+  &.show {
+    display: block;
+  }
 
   button#scroll-top-btn {
     color: $tertiary-color;

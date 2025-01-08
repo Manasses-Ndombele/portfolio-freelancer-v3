@@ -1,0 +1,43 @@
+@use "../base/variables.scss" as *;
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#main-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $tertiary-color-b;
+  color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 3;
+  @include poppins-font(500);
+  transition: opacity 0.3s ease-in;
+
+  &.closed {
+    opacity: 0;
+    display: none;
+  }
+
+  #loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid $primary-color;
+    border-top: 10px solid $primary-color-b;
+    animation: spinner 1s ease-in-out infinite;
+  }
+}

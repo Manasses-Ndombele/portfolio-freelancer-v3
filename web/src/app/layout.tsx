@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { ProjectProvider } from "@/context/ProjectContext";
+import { LoadingDataProvider } from "@/context/LoadingDataContext";
 import ThemeWrapper from "@/components/ThemeWrapper";
 import MainHeader from "@/components/MainHeader";
 import MainFooter from "@/components/MainFooter";
@@ -19,18 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <ThemeProvider>
-        <ThemeWrapper>
-          <body>
-            <MainHeader />
-            <ProjectProvider>
-              {children}
-            </ProjectProvider>
-            <MainFooter />
-            <ScrollTopBtn />
-          </body>
-        </ThemeWrapper>
-      </ThemeProvider>
+      <LoadingDataProvider>
+        <ThemeProvider>
+          <ThemeWrapper>
+            <body>
+              <MainHeader />
+              <ProjectProvider>{children}</ProjectProvider>
+              <MainFooter />
+              <ScrollTopBtn />
+            </body>
+          </ThemeWrapper>
+        </ThemeProvider>
+      </LoadingDataProvider>
     </html>
   );
 }

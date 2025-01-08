@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "@/context/ThemeContext";
 import projectsGifLight from "@/assets/desktop-and-mobile-example light.gif";
 import projectsGifDark from "@/assets/desktop-and-mobile-example dark.gif";
@@ -19,9 +20,11 @@ function BrandIntro() {
           forma detalhada e depois avalio suas necessidades para que no final
           seja entregue uma solução para os seus clientes!
         </p>
-        <button type="button" className="main-cta">
-          Pedir orçamento
-        </button>
+        <Link href="#contacts-container">
+          <button type="button" className="main-cta">
+            Pedir orçamento
+          </button>
+        </Link>
       </div>
       <div id="brand-intro-video">
         {theme === "light" ? (

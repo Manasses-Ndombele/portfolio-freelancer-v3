@@ -14,7 +14,7 @@ function MainHeader() {
   return (
     <header id="main-header">
       <div id="header-main-layout">
-        <Link href="/">
+        <Link href="#">
           <span>{"{ "}</span>
           <strong>DevManasses</strong>
           <span>{" }"}</span>

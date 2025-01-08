@@ -52,22 +52,25 @@ export default function ProjectsExamples() {
             projectName={data[0].name}
             tags={data[0].categories}
             styleClass="card-a"
+            projectId={1}
           />
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
             imgSrc={project2}
-            projectName={data[0].name}
-            tags={data[0].categories}
+            projectName={data[1].name}
+            tags={data[1].categories}
             styleClass="card-a"
+            projectId={2}
           />
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
             imgSrc={project3}
-            projectName={data[0].name}
-            tags={data[0].categories}
+            projectName={data[2].name}
+            tags={data[2].categories}
             styleClass="card-a"
+            projectId={3}
           />
         </SwiperSlide>
       </Swiper>

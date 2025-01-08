@@ -1,4 +1,4 @@
-export type Theme = "light" | "dark";
+export type Theme = "light" | "dark" | "none";
 
 export type ThemeContextType = {
   theme: Theme;

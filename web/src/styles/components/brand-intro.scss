@@ -65,21 +65,25 @@ html.dark {
       max-width: 35rem;
     }
 
-    button.main-cta {
-      width: 100%;
-      border: none;
-      border-radius: 10px;
-      font-size: 1em;
-      padding: 0.5rem 0rem;
-      cursor: pointer;
-      background-image: linear-gradient(
-        to top,
-        $primary-color-b,
-        $primary-color
-      );
-      color: $tertiary-color;
-      max-width: 20rem;
-      @include poppins-font(500);
+    a {
+      display: block;
+
+      button.main-cta {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        font-size: 1em;
+        padding: 0.5rem 0rem;
+        cursor: pointer;
+        background-image: linear-gradient(
+          to top,
+          $primary-color-b,
+          $primary-color
+        );
+        color: $tertiary-color;
+        max-width: 20rem;
+        @include poppins-font(500);
+      }
     }
   }
 

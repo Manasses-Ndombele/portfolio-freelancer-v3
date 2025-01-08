@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useProject } from "@/context/ProjectContext";
+import { useLoading } from "@/context/LoadingDataContext";
 import { ProjectCardType } from "@/types/ProjectCard";
 import "@/styles/components/project-card.scss";
 
@@ -14,8 +15,16 @@ export default function ProjectCard({
   projectDescription = "",
   projectGithub = "",
   projectLink = "",
+  projectId = 0,
 }: ProjectCardType) {
   const { openProject } = useProject();
+  const router = useRouter();
+  const { defineLoading } = useLoading();
+  const handleClick = () => {
+    defineLoading(true);
+    router.push(`/projects?project_id=${projectId}`);
+  };
+
   return (
     <div className={`project-card ${styleClass}`}>
       <div className="project-img">
@@ -35,11 +44,15 @@ export default function ProjectCard({
           ))}
         </p>
         {styleClass === "card-a" ? (
-          <Link href="/projects?project-id=1">
-            <button type="button" className="card-cta">
-              Saiba mais
-            </button>
-          </Link>
+          <button
+            type="button"
+            className="card-cta"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            Saiba mais
+          </button>
         ) : (
           <button
             type="button"

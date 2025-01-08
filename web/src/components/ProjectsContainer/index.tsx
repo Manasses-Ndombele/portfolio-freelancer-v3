@@ -1,12 +1,18 @@
 "use client";
 import React, { useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import ProjectCard from "@/components/ProjectCard";
 import { data } from "@/data/projects";
 import { useProjectFilter } from "@/context/FilterProjectContext";
+import { useProject } from "@/context/ProjectContext";
+import { useLoading } from "@/context/LoadingDataContext";
 import "@/styles/components/projects-container.scss";
 
 export default function ProjectsContainer() {
   const { filter } = useProjectFilter();
+  const params = useSearchParams();
+  const { openProject } = useProject();
+  const { defineLoading } = useLoading();
   useEffect(() => {
     const projectCards = document.querySelectorAll("div.project-card.card-b");
     projectCards.forEach((card) => {
@@ -19,6 +25,23 @@ export default function ProjectsContainer() {
       }
     });
   }, [filter]);
+
+  useEffect(() => {
+    const project_id = params.get("project_id");
+    const isProjectIdValid: boolean = project_id !== null || project_id !== "";
+    if (isProjectIdValid && Number(project_id) > 0) {
+      const pos = Number(project_id) - 1;
+      openProject({
+        projectTitle: data[pos].name,
+        projectDescription: data[pos].description,
+        projectGithub: data[pos].github,
+        projectLink: data[pos].link,
+      });
+
+      defineLoading(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div id="projects-container">
