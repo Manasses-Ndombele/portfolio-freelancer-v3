@@ -1,0 +1,49 @@
+@use "../base/variables.scss" as *;
+
+html.light {
+  #home-link-container > a {
+    color: $secondary-color;
+
+    span.icon-container {
+        background-color: $secondary-color;
+    }
+  }
+}
+
+html.dark {
+  #home-link-container > a {
+    color: $tertiary-color;
+
+    span.icon-container {
+        background-color: $primary-color-b;
+    }
+  }
+}
+
+#home-link-container {
+  padding: 1rem;
+
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: min-content;
+
+    span.icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $tertiary-color;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      font-size: 1.5em;
+      padding: 0.4rem;
+    }
+
+    span {
+        font-size: 1.2em;
+    }
+  }
+}

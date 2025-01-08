@@ -8,6 +8,7 @@ import project6 from "@/assets/project 6.jpg";
 import project7 from "@/assets/project 7.jpg";
 import project8 from "@/assets/project 8.jpg";
 import project9 from "@/assets/project 9.jpg";
+import "@/styles/components/projects-container.scss";
 
 export default function ProjectsContainer() {
   return (
@@ -15,65 +16,83 @@ export default function ProjectsContainer() {
       <ProjectCard
         imageSource={project1}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project2}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project3}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project4}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project5}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project6}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project7}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project8}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
       <ProjectCard
         imageSource={project9}
         projectName="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil, nesciunt debitis cupiditate libero omnis perspiciatis doloremque voluptatem reprehenderit, illo expedita quae cum commodi voluptate adipisci rerum excepturi, aliquam et?"
         tags={["Site de vendas", "Landing page"]}
         styleClass="card-b"
+        projectDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint vel, natus praesentium quibusdam non ea, maxime tenetur temporibus odio perferendis deleniti cupiditate voluptatum eaque dolore officiis corporis voluptates nulla?"
+        projectGithub="github.com"
+        projectLink="manassesndombele.com"
       />
     </div>
   );

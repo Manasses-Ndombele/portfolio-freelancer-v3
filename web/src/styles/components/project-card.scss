@@ -2,50 +2,59 @@
 
 html.light {
   .project-card {
-    box-shadow: 0 0 4px $secondary-color;
+    &.card-a {
+      box-shadow: 0 0 4px $secondary-color;
 
-    .project-description {
-      background-color: $tertiary-color-b;
+      .project-description {
+        background-color: $tertiary-color-b;
 
-      span.tag {
-        background-color: $tertiary-color;
-        border: 1px solid $secondary-color;
+        span.tag {
+          background-color: $tertiary-color;
+          border: 1px solid $secondary-color;
+        }
+
+        button.card-cta {
+          background-color: $secondary-color;
+          color: $tertiary-color;
+        }
       }
+    }
 
-      button.card-cta {
-        background-color: $secondary-color;
-        color: $tertiary-color;
-      }
+    &.card-b {
+      background-color: $tertiary-color;
+      box-shadow: 1px 1px 2px $secondary-color;
     }
   }
 }
 
 html.dark {
   .project-card {
-    box-shadow: 0 0 4px $secondary-color;
+    &.card-a {
+      box-shadow: 0 0 4px $secondary-color;
 
-    .project-description {
-      background-color: $quartenary-color;
+      .project-description {
+        background-color: $quartenary-color;
 
-      span.tag {
-        background-color: $primary-color;
-        border: 1px solid $tertiary-color-b;
-        font-weight: bold;
+        span.tag {
+          background-color: $primary-color;
+          border: 1px solid $tertiary-color-b;
+          font-weight: bold;
+        }
+
+        button.card-cta {
+          background-color: $primary-color;
+          color: $tertiary-color;
+        }
       }
+    }
 
-      button.card-cta {
-        background-color: $primary-color;
-        color: $tertiary-color;
-      }
+    &.card-b {
+      background-color: $quinary-color;
     }
   }
 }
 
 .project-card {
-  border-radius: 10px;
-  overflow: hidden;
-  height: 30rem;
-
   .project-img {
     height: 50%;
 
@@ -56,16 +65,14 @@ html.dark {
   }
 
   .project-description {
-    padding: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 40%;
-    border-radius: 0 0 10px 10px;
 
     h4 {
+      margin: 0 !important;
       font-size: 1.2em;
-      margin: 0;
     }
 
     p.tags {
@@ -82,18 +89,53 @@ html.dark {
       }
     }
 
+    button.card-cta {
+      padding: 0.6rem 0;
+      border-radius: 22px;
+      border: none;
+      width: 100%;
+      font-size: 1.1em;
+      cursor: pointer;
+      @include poppins-font(500);
+    }
+  }
+
+  &.card-a {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30rem;
+
+    .project-description {
+      padding: 0.7rem;
+      border-radius: 0 0 10px 10px;
+    }
+
     a {
       display: block;
       width: 100%;
+    }
+  }
+
+  &.card-b {
+    height: 26rem;
+    border-radius: 20px;
+
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    .project-description {
+      padding: 1rem;
+
+      span.tag {
+        background-color: transparent;
+        border: 1px solid $secondary-color;
+      }
 
       button.card-cta {
-        padding: 0.6rem 0;
-        border-radius: 22px;
-        border: none;
-        width: 100%;
-        font-size: 1.1em;
-        cursor: pointer;
-        @include poppins-font(500);
+        background-color: $primary-color-b;
+        color: $tertiary-color;
       }
     }
   }

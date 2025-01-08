@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Formik, Form, Field } from "formik";
+import "@/styles/components/search-container.scss";
 
 export default function SearchContainer() {
   return (

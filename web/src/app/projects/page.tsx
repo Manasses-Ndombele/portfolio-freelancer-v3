@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProjectProvider } from "@/context/ProjectContext";
 import HomeLinkContainer from "@/components/HomeLinkContainer";
 import ProjectsMainCopy from "@/components/ProjectsMainCopy";
 import SearchContainer from "@/components/SearchContainer";
@@ -11,20 +12,14 @@ export const metadata: Metadata = {
 
 export default function Projects() {
   return (
-    <main>
-      <HomeLinkContainer />
-      <ProjectsMainCopy />
-      <SearchContainer />
-      <ProjectsContainer />
-      <ModalProject
-        projectTitle="Emagrecimento Sem Segredos"
-        projectDescription="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-          harum, ex quasi rem quisquam maiores libero quas aliquam voluptas
-          omnis distinctio facere blanditiis facilis odio. Amet labore doloribus
-          ab quia."
-        projectGithub="https://github.com"
-        projectLink="https://emagrecimento-sem-segredos.vercel.app/"
-      />
-    </main>
+    <ProjectProvider>
+      <main>
+        <HomeLinkContainer />
+        <ProjectsMainCopy />
+        <SearchContainer />
+        <ProjectsContainer />
+        <ModalProject />
+      </main>
+    </ProjectProvider>
   );
 }

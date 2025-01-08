@@ -1,0 +1,12 @@
+@use "../base/variables.scss" as *;
+
+#main-copy-container {
+  padding: 0 1rem;
+
+  h1 {
+    color: $primary-color;
+    text-transform: capitalize;
+    margin: 10px 0 !important;
+    @include montserrat-font();
+  }
+}

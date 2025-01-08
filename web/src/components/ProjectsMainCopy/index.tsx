@@ -1,3 +1,5 @@
+import "@/styles/components/projects-main-copy.scss";
+
 export default function ProjectsMainCopy() {
   return (
     <div id="main-copy-container">
