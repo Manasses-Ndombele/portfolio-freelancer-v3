@@ -2,9 +2,9 @@
 import React from "react";
 import { Formik, Form, Field } from "formik";
 
-export default function SearchArea() {
+export default function SearchContainer() {
   return (
-    <div id="search-area">
+    <div id="search-container">
       <Formik
         initialValues={{ search_select: "all" }}
         onSubmit={(values) => {

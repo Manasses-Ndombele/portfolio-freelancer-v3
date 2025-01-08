@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa";
-import ProjectCard from "../ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import project1 from "@/assets/project-example-1.gif";
 import project2 from "@/assets/project-example-2.gif";
 import project3 from "@/assets/project-example-3.gif";
