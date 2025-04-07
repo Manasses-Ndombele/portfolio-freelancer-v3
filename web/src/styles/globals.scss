@@ -1,13 +1,13 @@
+@use "./base/variables.scss" as *;
+@use "./base/reset.scss";
+
 html {
   &.light {
-    background-color: #dbd3c9;
+    background-color: $tertiary-color-b;
+    color: $secondary-color;
   }
 
   &.dark {
-    background-color: #131212;
+    background-color: $secondary-color;
   }
-}
-
-body {
-  color: #3ebd3e;
 }

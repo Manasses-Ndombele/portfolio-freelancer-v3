@@ -1,7 +1,9 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import SearchArea from "@/components/SearchArea";
 import ProjectsContainer from "@/components/ProjectsContainer";
 import ModalProject from "@/components/ModalProject";
+import { IoHomeSharp } from "react-icons/io5";
 
 export const metadata: Metadata = {
   title: "Manassés Ndombele | Projetos",
@@ -10,6 +12,11 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <main>
+      <div id="home-link-area">
+        <Link href="/">
+          <IoHomeSharp />
+        </Link>
+      </div>
       <div id="main-copy">
         <h1>Todos projetos</h1>
         <p>

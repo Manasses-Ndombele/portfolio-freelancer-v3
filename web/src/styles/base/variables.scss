@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+$primary-color: #0c70f2;
+$primary-color-b: #19a6fc;
+$secondary-color: #1d1d1d;
+$tertiary-color: #f4f4f4;
+$tertiary-color-b: #ffffff;
+$quartenary-color: #160042;
+
+@mixin montserrat-font() {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@mixin poppins-font($weight) {
+  font-family: "Poppins", sans-serif;
+  font-weight: $weight;
+}
