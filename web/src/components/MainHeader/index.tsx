@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { Formik, Form, Field } from "formik";
 import { useTheme } from "@/context/ThemeContext";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
@@ -40,16 +41,23 @@ function MainHeader() {
               <CiLight /> Modo claro
             </button>
           )}
-          <form>
-            <label htmlFor="lang-select">
-              <IoLanguage />
-              Língua
-            </label>
-            <select id="lang-select">
-              <option value="pt-br">PT - Brasil</option>
-              <option value="en-us">EN - United States</option>
-            </select>
-          </form>
+          <Formik
+            initialValues={{ lang_select: "pt-br" }}
+            onSubmit={(values) => {
+              console.log(values.lang_select);
+            }}
+          >
+            <Form>
+              <label htmlFor="lang-select">
+                <IoLanguage />
+                <span>Língua</span>
+              </label>
+              <Field as="select" name="lang_select" id="lang-select">
+                <option value="en-us">EN - United States</option>
+                <option value="pt-br">PT - Brasil</option>
+              </Field>
+            </Form>
+          </Formik>
         </menu>
         <button type="button">Pedir orçamento</button>
       </div>
