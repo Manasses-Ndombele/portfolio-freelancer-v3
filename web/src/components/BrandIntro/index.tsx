@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import projectsGif from "@/assets/desktop-and-mobile-example light.gif";
+import "@/styles/components/brand-intro.scss";
 
 function BrandIntro() {
   return (
@@ -14,13 +15,14 @@ function BrandIntro() {
           forma detalhada e depois avalio suas necessidades para que no final
           seja entregue uma solução para os seus clientes!
         </p>
-        <button type="button">Pedir orçamento</button>
+        <button type="button" className="main-cta">Pedir orçamento</button>
       </div>
       <div id="brand-intro-video">
         <Image
           src={projectsGif}
           alt="Projetos do desenvolvedor freelancer Manassés Ndombele"
         />
+        <div id="video-shadow"></div>
       </div>
     </div>
   );

@@ -1,0 +1,102 @@
+@use "../base/variables.scss" as *;
+
+#contacts-container {
+  background-image: linear-gradient(to top, $primary-color-b, $primary-color);
+  padding: 0.5rem;
+  margin: 1rem 0;
+
+  #social-area {
+    color: $tertiary-color;
+
+    h2 {
+      @include montserrat-font();
+      text-align: center;
+    }
+
+    #social-container {
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        a {
+          font-size: 1.5em;
+          color: $tertiary-color-b;
+        }
+      }
+    }
+
+    #email-container {
+      p {
+        text-align: center;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  #budget-container {
+    background-color: $tertiary-color;
+    border-radius: 10px;
+    padding: 0.8rem;
+    box-shadow: 0 0 4px $primary-color-b;
+
+    #budget-container-copy {
+      h2 {
+        color: $primary-color-b;
+        text-transform: capitalize;
+        @include montserrat-font();
+      }
+    }
+
+    #budget-form-container {
+      padding-right: 1rem;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        .field-container {
+          margin-bottom: 10px;
+          width: 100%;
+
+          input,
+          textarea {
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid $secondary-color;
+            color: $secondary-color;
+            padding: 0.5rem 0.4rem;
+            border-radius: 10px;
+            @include poppins-font(400);
+
+            &:focus {
+                outline: none;
+            }
+          }
+
+          span {
+            color: #f12020;
+            margin-top: 0.4rem;
+          }
+        }
+
+        button {
+          background-color: $secondary-color;
+          padding: 0.6rem 0;
+          border-radius: 22px;
+          border: none;
+          width: 100%;
+          font-size: 1.1em;
+          cursor: pointer;
+          color: $tertiary-color;
+          margin-top: 10px;
+          @include poppins-font(600);
+        }
+      }
+    }
+  }
+}

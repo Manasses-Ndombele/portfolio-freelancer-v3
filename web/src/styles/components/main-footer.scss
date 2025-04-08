@@ -1,0 +1,9 @@
+@use "../base/variables.scss" as *;
+
+footer#main-footer {
+    padding: 1rem;
+
+    p {
+        text-align: center;
+    }
+}

@@ -1,9 +1,16 @@
 import Image from "next/image";
 import aboutPhoto from "@/assets/DevManasses.png";
+import "@/styles/components/about-container.scss";
 
 export default function AboutContainer() {
   return (
     <div id="about-container">
+      <div id="about-img-container">
+        <Image
+          src={aboutPhoto}
+          alt="Manassés Ndombele desenvolvedor freelancer"
+        />
+      </div>
       <div id="about-copy">
         <h2>Sobre mim</h2>
         <p>
@@ -19,12 +26,6 @@ export default function AboutContainer() {
           resultados. Hoje meu objetivo principal é transformar códigos em
           degraus para que o seu negócio possa escalar!
         </p>
-      </div>
-      <div id="about-img-container">
-        <Image
-          src={aboutPhoto}
-          alt="Manassés Ndombele desenvolvedor freelancer"
-        />
       </div>
     </div>
   );

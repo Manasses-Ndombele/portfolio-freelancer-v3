@@ -1,18 +1,20 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
-import "swiper/swiper-bundle.css";
+import { FaArrowRight } from "react-icons/fa";
+import ProjectCard from "../ProjectCard";
 import project1 from "@/assets/project-example-1.gif";
 import project2 from "@/assets/project-example-2.gif";
 import project3 from "@/assets/project-example-3.gif";
+import "swiper/swiper-bundle.css";
+import "@/styles/components/project-examples.scss";
 
 export default function ProjectsExamples() {
   return (
     <div id="projects-examples">
-      <div className="projects-examples-copy">
+      <div id="projects-examples-copy">
         <h2>Meus projetos</h2>
         <p>
           Nada melhor do que ver para crer, aqui estão alguns projetos que
@@ -20,6 +22,7 @@ export default function ProjectsExamples() {
         </p>
       </div>
       <Swiper
+        id="swiper-projects"
         modules={[Navigation, A11y, Pagination]}
         slidesPerView={1}
         navigation
@@ -34,18 +37,34 @@ export default function ProjectsExamples() {
         }}
       >
         <SwiperSlide>
-          <Image src={project1} alt="Projeto do portfólio" />
+          <ProjectCard
+            imageSource={project1}
+            projectName="Emagrecimento Sem Segredos"
+            tags={["Landing page", "Site de vendas"]}
+            styleClass="card-a"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={project2} alt="Projeto do portfólio" />
+          <ProjectCard
+            imageSource={project2}
+            projectName="EDEN Hotels"
+            tags={["Site institucional", "Site para branding", "Sistema web"]}
+            styleClass="card-a"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={project3} alt="Projeto do portfólio" />
+          <ProjectCard
+            imageSource={project3}
+            projectName="VR Motion"
+            tags={["Loja online", "Site de vendas"]}
+            styleClass="card-a"
+          />
         </SwiperSlide>
       </Swiper>
       <div id="projects-cta-container">
         <Link href="/projects">
-          <button type="button">Veja mais</button>
+          <span>Ver todos projetos</span>
+          <FaArrowRight />
         </Link>
       </div>
     </div>

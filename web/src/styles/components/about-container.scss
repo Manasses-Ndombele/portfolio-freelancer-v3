@@ -1,0 +1,40 @@
+@use "../base/variables.scss" as *;
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0 1rem;
+
+  #about-img-container {
+    border: 1px solid $primary-color;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      background-color: $primary-color-b;
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+    }
+  }
+
+  #about-copy {
+    h2 {
+      text-transform: capitalize;
+      @include montserrat-font();
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}

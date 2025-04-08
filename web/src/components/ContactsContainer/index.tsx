@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import "@/styles/components/contacts-container.scss";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Este campo é obrigatório!"),
@@ -126,6 +127,9 @@ export default function ContactsContainer() {
                   as="textarea"
                 />
                 <ErrorMessage component="span" name="project_description" />
+              </div>
+              <div className="field-container">
+                <button type="submit">Enviar</button>
               </div>
             </Form>
           </Formik>

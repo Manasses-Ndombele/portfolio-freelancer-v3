@@ -21,6 +21,7 @@ import { CgFigma } from "react-icons/cg";
 import { DiLinux } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
+import "@/styles/components/skills-container.scss";
 
 export default function SkillsContainer() {
   return (
@@ -36,104 +37,204 @@ export default function SkillsContainer() {
       <div id="skills-categories">
         <div className="skills-category">
           <h3>Frontend</h3>
-          <div className="skills-items">
-            <div className="skill-item">
-              <FaHtml5 />
-              <h4>HTML</h4>
+          <div className="skills-items-container">
+            <div className="skills-items">
+              <div className="skill-item">
+                <FaHtml5 />
+                <p>HTML</p>
+              </div>
+              <div className="skill-item">
+                <FaCss3Alt />
+                <p>CSS</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoJavascript />
+                <p>JavaScript</p>
+              </div>
+              <div className="skill-item">
+                <FaBootstrap />
+                <p>Bootstrap</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoSass />
+                <p>Sass</p>
+              </div>
+              <div className="skill-item">
+                <FaReact />
+                <p>React</p>
+              </div>
+              <div className="skill-item">
+                <SiTypescript />
+                <p>TypeScript</p>
+              </div>
+              <div className="skill-item">
+                <RiTailwindCssFill />
+                <p>TailwindCSS</p>
+              </div>
+              <div className="skill-item">
+                <SiNextdotjs />
+                <p>NextJS</p>
+              </div>
             </div>
-            <div className="skill-item">
-              <FaCss3Alt />
-              <h4>CSS</h4>
-            </div>
-            <div className="skill-item">
-              <IoLogoJavascript />
-              <h4>JavaScript</h4>
-            </div>
-            <div id="skill-item">
-              <FaBootstrap />
-              <h4>Bootstrap</h4>
-            </div>
-            <div id="skill-item">
-              <IoLogoSass />
-              <h4>Sass</h4>
-            </div>
-            <div id="skill-item">
-              <FaReact />
-              <h4>React</h4>
-            </div>
-            <div id="skill-item">
-              <SiTypescript />
-              <h4>TypeScript</h4>
-            </div>
-            <div id="skill-item">
-              <RiTailwindCssFill />
-              <h4>TailwindCSS</h4>
-            </div>
-            <div id="skill-item">
-              <SiNextdotjs />
-              <h4>NextJS</h4>
+            <div className="skills-items">
+              <div className="skill-item">
+                <FaHtml5 />
+                <p>HTML</p>
+              </div>
+              <div className="skill-item">
+                <FaCss3Alt />
+                <p>CSS</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoJavascript />
+                <p>JavaScript</p>
+              </div>
+              <div className="skill-item">
+                <FaBootstrap />
+                <p>Bootstrap</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoSass />
+                <p>Sass</p>
+              </div>
+              <div className="skill-item">
+                <FaReact />
+                <p>React</p>
+              </div>
+              <div className="skill-item">
+                <SiTypescript />
+                <p>TypeScript</p>
+              </div>
+              <div className="skill-item">
+                <RiTailwindCssFill />
+                <p>TailwindCSS</p>
+              </div>
+              <div className="skill-item">
+                <SiNextdotjs />
+                <p>NextJS</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="skill-category">
+        <div className="skills-category">
           <h3>Backend</h3>
-          <div className="skills-items">
-            <div className="skill-item">
-              <FaPython />
-              <h4>Python</h4>
+          <div className="skills-items-container">
+            <div className="skills-items">
+              <div className="skill-item">
+                <FaPython />
+                <p>Python</p>
+              </div>
+              <div className="skill-item">
+                <SiPhp />
+                <p>PHP</p>
+              </div>
+              <div className="skill-item">
+                <SiDjango />
+                <p>Django</p>
+              </div>
+              <div className="skill-item">
+                <SiFlask />
+                <p>Flask</p>
+              </div>
+              <div className="skill-item">
+                <SiMysql />
+                <p>MySQL</p>
+              </div>
+              <div className="skill-item">
+                <SiSqlite />
+                <p>SQLite</p>
+              </div>
+              <div className="skill-item">
+                <BiLogoPostgresql />
+                <p>PostgreSQL</p>
+              </div>
+              <div className="skill-item">
+                <FaLaravel />
+                <p>Laravel</p>
+              </div>
             </div>
-            <div className="skill-item">
-              <SiPhp />
-              <h4>PHP</h4>
-            </div>
-            <div className="skill-item">
-              <SiDjango />
-              <h4>Django</h4>
-            </div>
-            <div className="skill-item">
-              <SiFlask />
-              <h4>Flask</h4>
-            </div>
-            <div className="skill-item">
-              <SiMysql />
-              <h4>MySQL</h4>
-            </div>
-            <div className="skill-item">
-              <SiSqlite />
-              <h4>SQLite</h4>
-            </div>
-            <div className="skill-item">
-              <BiLogoPostgresql />
-              <h4>PostgreSQL</h4>
-            </div>
-            <div className="skill-item">
-              <FaLaravel />
-              <h4>Laravel</h4>
+            <div className="skills-items">
+              <div className="skill-item">
+                <FaPython />
+                <p>Python</p>
+              </div>
+              <div className="skill-item">
+                <SiPhp />
+                <p>PHP</p>
+              </div>
+              <div className="skill-item">
+                <SiDjango />
+                <p>Django</p>
+              </div>
+              <div className="skill-item">
+                <SiFlask />
+                <p>Flask</p>
+              </div>
+              <div className="skill-item">
+                <SiMysql />
+                <p>MySQL</p>
+              </div>
+              <div className="skill-item">
+                <SiSqlite />
+                <p>SQLite</p>
+              </div>
+              <div className="skill-item">
+                <BiLogoPostgresql />
+                <p>PostgreSQL</p>
+              </div>
+              <div className="skill-item">
+                <FaLaravel />
+                <p>Laravel</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="skill-category">
+        <div className="skills-category">
           <h3>Outras tecnologias</h3>
-          <div className="skills-items">
-            <div className="skill-item">
-              <LuFileJson />
-              <h4>JSON</h4>
+          <div className="skills-items-container">
+            <div className="skills-items">
+              <div className="skill-item">
+                <LuFileJson />
+                <p>JSON</p>
+              </div>
+              <div className="skill-item">
+                <FaGitAlt />
+                <p>Git</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoDocker />
+                <p>Docker</p>
+              </div>
+              <div className="skill-item">
+                <CgFigma />
+                <p>Figma</p>
+              </div>
+              <div className="skill-item">
+                <DiLinux />
+                <p>Linux</p>
+              </div>
             </div>
-            <div className="skill-item">
-              <FaGitAlt />
-              <h4>Git</h4>
-            </div>
-            <div className="skill-item">
-              <IoLogoDocker />
-              <h4>Docker</h4>
-            </div>
-            <div className="skill-item">
-              <CgFigma />
-              <h4>Figma</h4>
-            </div>
-            <div className="skill-item">
-              <DiLinux />
-              <h4>Linux</h4>
+            <div className="skills-items">
+              <div className="skill-item">
+                <LuFileJson />
+                <p>JSON</p>
+              </div>
+              <div className="skill-item">
+                <FaGitAlt />
+                <p>Git</p>
+              </div>
+              <div className="skill-item">
+                <IoLogoDocker />
+                <p>Docker</p>
+              </div>
+              <div className="skill-item">
+                <CgFigma />
+                <p>Figma</p>
+              </div>
+              <div className="skill-item">
+                <DiLinux />
+                <p>Linux</p>
+              </div>
             </div>
           </div>
         </div>

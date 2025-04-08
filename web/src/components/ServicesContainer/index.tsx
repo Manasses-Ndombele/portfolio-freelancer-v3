@@ -2,6 +2,7 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { BsApple } from "react-icons/bs";
 import { IoConstruct } from "react-icons/io5";
 import { RiRobot2Fill } from "react-icons/ri";
+import "@/styles/components/services-container.scss";
 
 function ServicesContainer() {
   return (

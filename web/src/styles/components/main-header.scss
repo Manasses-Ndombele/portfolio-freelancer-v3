@@ -1,0 +1,129 @@
+@use "../base/variables.scss" as *;
+
+header#main-header {
+  #header-main-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $tertiary-color-b;
+    box-shadow: 0px 0px 2px $secondary-color;
+
+    a {
+      text-decoration: none;
+
+      strong {
+        color: $secondary-color;
+      }
+
+      span {
+        color: $primary-color-b;
+      }
+    }
+  }
+
+  button.menu-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.3em;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  #header-options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $tertiary-color-b;
+    transform: translateY(-100vh);
+    transition: all 0.4s ease-in;
+
+    &.opened {
+      transform: none;
+      opacity: 1;
+    }
+
+    #header-close-action-container {
+      display: flex;
+      justify-content: end;
+      padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+
+    menu {
+      padding: 1rem;
+      margin: 0;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-top: 0.8rem;
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+        }
+
+        select {
+          background-color: transparent;
+          border: 2px solid $tertiary-color;
+          border-radius: 10px;
+          font-size: 1em;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          @include poppins-font(400);
+        }
+      }
+
+      button#theme-btn {
+        width: 100%;
+        margin: 0.6rem 0rem;
+        background-color: transparent;
+        border: 2px solid $tertiary-color;
+        border-radius: 10px;
+        font-size: 1em;
+        padding: 0.5rem 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        cursor: pointer;
+        @include poppins-font(400);
+      }
+
+      a {
+        display: block;
+        margin-top: 0.5rem;
+
+        button.main-cta {
+          width: 100%;
+          background-color: $primary-color;
+          border: none;
+          border-radius: 10px;
+          font-size: 1em;
+          padding: 0.5rem 0rem;
+          cursor: pointer;
+          color: $tertiary-color;
+          @include poppins-font(500);
+        }
+      }
+    }
+  }
+}

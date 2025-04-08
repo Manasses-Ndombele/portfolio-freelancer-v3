@@ -1,0 +1,28 @@
+@use "../base/variables.scss" as *;
+
+#services-container {
+  background-color: $primary-color;
+  color: $tertiary-color;
+  padding: 1rem;
+
+  #services-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    .service-item {
+      text-align: center;
+
+      svg {
+        font-size: 2.2em;
+      }
+
+      h3,
+      p {
+        padding: 0 !important;
+      }
+    }
+  }
+}

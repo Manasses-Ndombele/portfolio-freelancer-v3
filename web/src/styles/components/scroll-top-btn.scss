@@ -1,0 +1,19 @@
+@use "../base/variables.scss" as *;
+
+#scroll-top-area {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+
+  button#scroll-top-btn {
+    background-color: $secondary-color;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: $tertiary-color;
+    font-size: 1.3em;
+    padding: 0.4rem;
+    border: none;
+    cursor: pointer;
+  }
+}
