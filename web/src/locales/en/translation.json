@@ -26,6 +26,59 @@
   "skill-category.title": "Other technologies",
   "projects-container.title": "My projects",
   "projects-container.description": "Here are some real-world projects that showcase my skills. After all, seeing is believing.",
+  "projectCard1": {
+    "category1": "Sales website",
+    "category2": "Landing page",
+    "description": "This is a landing page for a weight loss info product called `Emagrecimento Sem Segredos`. It was created to showcase my frontend development and web design skills.",
+    "imgAlt": "Example of a high-converting landing page"
+  },
+  "projectCard2": {
+    "category1": "Branding website",
+    "category2": "Corporate website",
+    "description": "This is a sample corporate website for a fictional consulting company. It serves as a demonstration of my frontend development and web design capabilities.",
+    "imgAlt": "Example of a corporate branding website for a consulting firm"
+  },
+  "projectCard3": {
+    "category1": "Sales website",
+    "category2": "Online store",
+    "description": "This is an online store currently under development. It focuses on the VR glasses niche and, for now, serves only as a demonstration of my frontend and web design skills — but it will soon be fully functional.",
+    "imgAlt": "Example of a modern online store for VR glasses"
+  },
+  "projectCard4": {
+    "category1": "Others",
+    "description": "This is an addiction quiz focused on compulsive behavior, based on data from the WHO. It was created for the Socorre.me platform by Daniel Santos.",
+    "imgAlt": "Compulsive behavior addiction quiz for the Socorre.me platform"
+  },
+  "projectCard5": {
+    "category1": "Web system",
+    "category2": "Automations",
+    "description": "This is a mini system for mass email sending using SMTP. It allows fast and free email delivery by using an app password to grant the site access to a sender email account.",
+    "imgAlt": "Web automation system for email delivery"
+  },
+  "projectCard6": {
+    "category1": "Sales website",
+    "category2": "Landing page",
+    "description": "This is a sample landing page created to simulate the sale of access to a course platform in the cryptocurrency niche, called `CriptoHacking`.",
+    "imgAlt": "Example of a high-converting landing page"
+  },
+  "projectCard7": {
+    "category1": "Branding website",
+    "category2": "Corporate website",
+    "description": "This is a corporate website for a fictional company offering digital marketing and software house services. It's designed to demonstrate my understanding of core web technologies (HTML, CSS, JS).",
+    "imgAlt": "Example of a corporate branding website for a marketing company"
+  },
+  "projectCard8": {
+    "category1": "Automations",
+    "category2": "Others",
+    "description": "This project is a cross-platform desktop app designed to generate nutritious recipes based on the nutrients and gram quantities selected by the user. The recipes are generated using the SponnacularAPI.",
+    "imgAlt": "Automation and desktop app for diet planning"
+  },
+  "projectCard9": {
+    "category1": "Automations",
+    "category2": "Others",
+    "description": "This is a cross-platform desktop application built to recommend movies based on genres the user is interested in. The recommendations are sent to the user via WhatsApp using a Bot.",
+    "imgAlt": "Automation and desktop app for movie recommendations via WhatsApp"
+  },
   "project-card.btn-action": "Learn more",
   "projects-container.btn-action": "See all projects",
   "about-container.img-alt": "Manassés Ndombele freelance developer",

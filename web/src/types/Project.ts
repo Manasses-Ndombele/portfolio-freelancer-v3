@@ -10,19 +10,9 @@ type keys =
   | "automations"
   | "others";
 
-type values =
-  | "Site de vendas"
-  | "Loja online"
-  | "Landing page"
-  | "Site para branding"
-  | "Site institucional"
-  | "Sistema web"
-  | "Automações"
-  | "Outros";
-
 export interface ProjectCategory {
   categoriesKeys: keys[];
-  categoriesValues: values[];
+  categoriesValues: string[];
 }
 
 export interface Project {
@@ -33,4 +23,5 @@ export interface Project {
   img: StaticImageData;
   github: string;
   link: string;
+  imgAlt: string;
 }

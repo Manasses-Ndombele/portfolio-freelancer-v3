@@ -17,6 +17,7 @@ export default function ProjectCard({
   projectGithub = "",
   projectLink = "",
   projectId = 0,
+  imgAlt
 }: ProjectCardType) {
   const { openProject } = useProject();
   const router = useRouter();
@@ -30,10 +31,10 @@ export default function ProjectCard({
   return (
     <div className={`project-card ${styleClass}`}>
       <div className="project-img">
-        <Image src={imgSrc} alt="Projeto de portfólio" />
+        <Image src={imgSrc} alt={t(imgAlt)} />
       </div>
       <div className="project-description">
-        <h4>{projectName}</h4>
+        <h4>{t(projectName)}</h4>
         <p
           className={`tags ${tags.categoriesKeys
             .toString()
@@ -41,7 +42,7 @@ export default function ProjectCard({
         >
           {tags.categoriesValues.map((value, index) => (
             <span key={index} className="tag">
-              {value}
+              {t(value)}
             </span>
           ))}
         </p>

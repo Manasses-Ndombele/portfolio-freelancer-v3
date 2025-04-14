@@ -11,4 +11,5 @@ export interface ProjectCardType {
   projectGithub?: string;
   projectLink?: string;
   projectId?: number;
+  imgAlt: string;
 }

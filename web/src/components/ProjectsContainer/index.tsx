@@ -55,6 +55,7 @@ export default function ProjectsContainer() {
           projectGithub={project.github}
           projectLink={project.link}
           tags={project.categories}
+          imgAlt={project.imgAlt}
         />
       ))}
     </div>

@@ -14,62 +14,61 @@ export const data: Project[] = [
     name: "Emagrecimento sem segredos",
     categories: {
       categoriesKeys: ["sales", "landingPage"],
-      categoriesValues: ["Site de vendas", "Landing page"],
+      categoriesValues: ["projectCard1.category1", "projectCard1.category2"],
     },
-    description:
-      "Esta é uma landing page para um infoproduto no nicho de emagrecimento denominado `Emagrecimento Sem Segredos`, foi criado para demonstrar minhas habilidades em desenvolvimento frontend e webdesign.",
+    description: "projectCard1.description",
     technologies: ["ReactJS", "Bootstrap 5", "Sass", "JavaScript"],
     img: project1,
     github: "https://github.com/Manasses-Ndombele/ESS-Landing-Page",
     link: "http://emagrecimento-sem-segredos.vercel.app",
+    imgAlt: "projectCard1.imgAlt",
   },
   {
     name: "Borges Consulting",
     categories: {
       categoriesKeys: ["branding", "institutional"],
-      categoriesValues: ["Site para branding", "Site institucional"],
+      categoriesValues: ["projectCard2.category1", "projectCard2.category2"],
     },
-    description:
-      "Este é um site institucional de exemplo, no caso para uma empresa fictícia que presta serviços de consultoria, isto é apenas uma demonstração das minhas habilidades em desenvolvimento frontend e webdesign.",
+    description: "projectCard2.description",
     technologies: ["ReactJS", "Bootstrap 5", "Sass", "JavaScript"],
     img: project2,
     github: "https://github.com/Manasses-Ndombele/Borges-Consulting",
     link: "https://borges-consulting.vercel.app/",
+    imgAlt: "projectCard2.imgAlt",
   },
   {
     name: "VR Motion",
     categories: {
       categoriesKeys: ["sales", "ecommerce"],
-      categoriesValues: ["Site de vendas", "Loja online"],
+      categoriesValues: ["projectCard3.category1", "projectCard3.category2"],
     },
-    description:
-      "Esta é uma loja online ainda em andamento, ela está focada no nicho de óculos vr, e por enquanto é apenas uma demonstração das minhas habilidades em desenvolvimento frontend e webdesign mas brevemente estará 100% concluída e funcional.",
+    description: "projectCard3.description",
     technologies: ["ReactJS", "Bootstrap 5", "Sass", "JavaScript"],
     img: project3,
     github: "https://github.com/Manasses-Ndombele/VR-Motion",
     link: "https://vr-motion.vercel.app/",
+    imgAlt: "projectCard3.imgAlt",
   },
   {
     name: "Quiz da Socorre.me",
     categories: {
       categoriesKeys: ["others"],
-      categoriesValues: ["Outros"],
+      categoriesValues: ["projectCard4.category1"],
     },
-    description:
-      "Este é um quiz para teste de vício em compulsão baseado em dados da OMS criado para ser adicionada a plataforma Socorre.me de Daniel Santos.",
+    description: "projectCard4.description",
     technologies: ["HTML", "Sass", "JavaScript", "Bootstrap 5", "PHP"],
     img: project4,
     github: "https://github.com/Manasses-Ndombele/TVC-Quiz",
     link: "https://socorre.me/quiz/pages",
+    imgAlt: "projectCard4.imgAlt",
   },
   {
     name: "Automails",
     categories: {
-      categoriesKeys: ["webSystems"],
-      categoriesValues: ["Sistema web"],
+      categoriesKeys: ["webSystems", "automations"],
+      categoriesValues: ["projectCard5.category1", "projectCard5.category2"],
     },
-    description:
-      "Este é um mini sistema de envio de emails em massa usando SMTP para enviar emails de forma gratuita e rápida através de uma senha de aplicativo para que o site tenha acesso a uma conta de email de remetente.",
+    description: "projectCard5.description",
     technologies: [
       "Python",
       "Flask",
@@ -81,15 +80,15 @@ export const data: Project[] = [
     img: project5,
     github: "https://github.com/Manasses-Ndombele/AutoMails",
     link: "https://automails.vercel.app/",
+    imgAlt: "projectCard5.imgAlt",
   },
   {
     name: "CriptoHacking",
     categories: {
       categoriesKeys: ["sales", "landingPage"],
-      categoriesValues: ["Site de vendas", "Landing page"],
+      categoriesValues: ["projectCard6.category1", "projectCard6.category2"],
     },
-    description:
-      "Esta é uma landing page de exemplo para simular a venda do acesso a uma plataforma de cursos no nicho de criptomoedas denominada `CriptoHacking`.",
+    description: "projectCard6.description",
     technologies: [
       "HTML",
       "CSS",
@@ -102,15 +101,15 @@ export const data: Project[] = [
     img: project6,
     github: "https://github.com/Manasses-Ndombele/Criptohacking",
     link: "https://criptohacking-sg0s.onrender.com",
+    imgAlt: "projectCard6.imgAlt",
   },
   {
     name: "Borges Company",
     categories: {
       categoriesKeys: ["branding", "institutional"],
-      categoriesValues: ["Site para branding", "Site institucional"],
+      categoriesValues: ["projectCard7.category1", "projectCard7.category2"],
     },
-    description:
-      "Este é um site institucional criado para uma fictícia empresa prestadora de serviçõs de marketing digital e software house, é apenas para demonstrar meus conhecimentos na base da web (HTML, CSS, JS).",
+    description: "projectCard7.description",
     technologies: [
       "HTML",
       "Sass",
@@ -122,31 +121,32 @@ export const data: Project[] = [
     img: project7,
     github: "https://github.com/Manasses-Ndombele/Borges-Company/",
     link: "https://borges-company-1c97.onrender.com",
+    imgAlt: "projectCard7.imgAlt",
   },
   {
     name: "FoodBoard",
     categories: {
       categoriesKeys: ["automations", "others"],
-      categoriesValues: ["Automações", "Outros"],
+      categoriesValues: ["projectCard8.category1", "projectCard8.category2"],
     },
-    description:
-      "Este projeto é um programa desktop multiplataforma com objetivo de gerar receitas nutritivas para o usuário com base nos nutrientes e a quantidade em gramas selecionadas pelo usuário, as receitas são geradas através da SponnacularAPI.",
+    description: "projectCard8.description",
     technologies: ["Python", "Flutter (Flet)"],
     img: project8,
     github: "http://github.com/Manasses-Ndombele/FoodBoard/",
     link: "https://drive.google.com/file/d/1K28sSLdKTub67kWjkp6SMaAu6H63yyGn/view?usp=drive_link",
+    imgAlt: "projectCard8.imgAlt",
   },
   {
     name: "YourNextFilms",
     categories: {
       categoriesKeys: ["automations", "others"],
-      categoriesValues: ["Automações", "Outros"],
+      categoriesValues: ["projectCard9.category1", "projectCard9.category2"],
     },
-    description:
-      "Este é um programa desktop multiplataforma criado com o objetivo de gerar recomendações de filmes baseado em dados recolhidos sobre os gêneros de filmes de interesse do usuário, essas mesmas recomendações são enviadas para o whatsapp do usuário através de um Bot.",
+    description: "projectCard9.description",
     technologies: ["Python", "Flutter (Flet)"],
     img: project9,
     github: "https://github.com/Manasses-Ndombele/YourNextFilms/",
     link: "https://drive.google.com/file/d/1KAjvzSWeMHIXWW0rPnj4njdspxKMG47d/view?usp=drive_link",
+    imgAlt: "projectCard9.imgAlt",
   },
 ];

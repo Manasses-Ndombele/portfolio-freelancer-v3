@@ -44,7 +44,7 @@ export default function ModalProject() {
         }}
       >
         <h3>{project.projectTitle}</h3>
-        <p>{project.projectDescription}</p>
+        <p>{t(project.projectDescription)}</p>
         <div id="modal-actions">
           <Link href={project.projectGithub} target="_blank" rel="external">
             <button type="button">

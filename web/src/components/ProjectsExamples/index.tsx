@@ -52,6 +52,7 @@ export default function ProjectsExamples() {
             tags={data[0].categories}
             styleClass="card-a"
             projectId={1}
+            imgAlt={data[0].imgAlt}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -61,6 +62,7 @@ export default function ProjectsExamples() {
             tags={data[1].categories}
             styleClass="card-a"
             projectId={2}
+            imgAlt={data[1].imgAlt}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -70,6 +72,7 @@ export default function ProjectsExamples() {
             tags={data[2].categories}
             styleClass="card-a"
             projectId={3}
+            imgAlt={data[2].imgAlt}
           />
         </SwiperSlide>
       </Swiper>
