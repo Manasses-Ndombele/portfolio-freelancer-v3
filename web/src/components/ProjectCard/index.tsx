@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useProject } from "@/context/ProjectContext";
 import { useLoading } from "@/context/LoadingDataContext";
 import { ProjectCardType } from "@/types/ProjectCard";
+import { useTranslation } from "react-i18next";
 import "@/styles/components/project-card.scss";
 
 export default function ProjectCard({
@@ -25,6 +26,7 @@ export default function ProjectCard({
     router.push(`/projects?project_id=${projectId}`);
   };
 
+  const { t } = useTranslation();
   return (
     <div className={`project-card ${styleClass}`}>
       <div className="project-img">
@@ -51,7 +53,7 @@ export default function ProjectCard({
               handleClick();
             }}
           >
-            Saiba mais
+            {t("project-card.btn-action")}
           </button>
         ) : (
           <button
@@ -66,7 +68,7 @@ export default function ProjectCard({
               });
             }}
           >
-            Saiba mais
+            {t("project-card.btn-action")}
           </button>
         )}
       </div>

@@ -1,3 +1,4 @@
+"use client";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -21,19 +22,16 @@ import { CgFigma } from "react-icons/cg";
 import { DiLinux } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 import "@/styles/components/skills-container.scss";
 
 export default function SkillsContainer() {
+  const { t } = useTranslation();
   return (
     <div id="skills-container">
       <div id="skills-copy">
-        <h2>Minhas habilidades</h2>
-        <p>
-          Esta é a área do portfólio que venho atualizar a todo o momento
-          com o maior orgulho e prazer do mundo, porque acredito no aprendizado
-          autodidata e que o uso das melhores ferramentas têm como consequência
-          os melhores resultados para si.
-        </p>
+        <h2>{t("skills-container.title")}</h2>
+        <p>{t("skills-container.description")}</p>
       </div>
       <div id="skills-categories">
         <div className="skills-category">
@@ -191,7 +189,7 @@ export default function SkillsContainer() {
           </div>
         </div>
         <div className="skills-category">
-          <h3>Outras tecnologias</h3>
+          <h3>{t("skill-category.title")}</h3>
           <div className="skills-items-container">
             <div className="skills-items">
               <div className="skill-item">

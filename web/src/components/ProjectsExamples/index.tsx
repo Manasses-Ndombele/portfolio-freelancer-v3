@@ -9,18 +9,17 @@ import project1 from "@/assets/project-example-1.gif";
 import project2 from "@/assets/project-example-2.gif";
 import project3 from "@/assets/project-example-3.gif";
 import { data } from "@/data/projects";
+import { useTranslation } from "react-i18next";
 import "swiper/swiper-bundle.css";
 import "@/styles/components/project-examples.scss";
 
 export default function ProjectsExamples() {
+  const { t } = useTranslation();
   return (
     <div id="projects-examples">
       <div id="projects-examples-copy">
-        <h2>Meus projetos</h2>
-        <p>
-          Aqui estão alguns projetos que comprovam minhas habilidades na prática
-          pois como diz o ditado é necessário ver para crer.
-        </p>
+        <h2>{t("projects-container.title")}</h2>
+        <p>{t("projects-container.description")}</p>
       </div>
       <Swiper
         id="swiper-projects"
@@ -76,7 +75,7 @@ export default function ProjectsExamples() {
       </Swiper>
       <div id="projects-cta-container">
         <Link href="/projects">
-          <span>Ver todos projetos</span>
+          <span>{t("projects-container.btn-action")}</span>
           <FaArrowRight />
         </Link>
       </div>

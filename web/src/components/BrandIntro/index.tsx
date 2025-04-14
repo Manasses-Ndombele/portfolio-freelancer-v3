@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { useTheme } from "@/context/ThemeContext";
 import projectsGifLight from "@/assets/desktop-and-mobile-example light.gif";
 import projectsGifDark from "@/assets/desktop-and-mobile-example dark.gif";
@@ -9,24 +10,16 @@ import "@/styles/components/brand-intro.scss";
 
 function BrandIntro() {
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <div id="brand-intro">
       <div id="brand-intro-content">
-        <h1>
-          Criando projetos pensados no detalhe,{" "}
-          <strong>criado para vender</strong>
-        </h1>
-        <p>
-          Mais do que escrever código, eu mergulho nos detalhes que levam os
-          usuários a interagirem de forma intuitiva com meus projetos. Cada cor,
-          posição, imagem, animação tem um porquê! Desta forma eu crio soluções
-          vendáveis para que você possa ter um resultado final que você possa
-          chamar orgulhosamente de seu!
-        </p>
+        <h1>{t("main-copy.title")}</h1>
+        <p>{t("main-copy.description")}</p>
         <Link href="#contacts-container">
           <button type="button" className="main-cta">
-            Pedir orçamento
+            {t("main-copy.cta-btn")}
           </button>
         </Link>
       </div>
@@ -34,12 +27,12 @@ function BrandIntro() {
         {theme === "light" ? (
           <Image
             src={projectsGifLight}
-            alt="Projetos do desenvolvedor freelancer Manassés Ndombele"
+            alt={t("projects-gif-alt")}
           />
         ) : (
           <Image
             src={projectsGifDark}
-            alt="Projetos do desenvolvedor freelancer Manassés Ndombele"
+            alt={t("projects-gif-alt")}
           />
         )}
         <div id="video-shadow"></div>

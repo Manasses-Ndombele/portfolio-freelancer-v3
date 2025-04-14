@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 import "@/styles/components/contacts-container.scss";
 
 const validationSchema = Yup.object().shape({
@@ -15,11 +16,12 @@ const validationSchema = Yup.object().shape({
 });
 
 export default function ContactsContainer() {
+  const { t } = useTranslation();
   return (
     <div id="contacts-container">
       <div id="social-area">
         <div id="social-container">
-          <h2>Redes sociais</h2>
+          <h2>{t("contacts-container.social.title-a")}</h2>
           <nav>
             <Link
               href="https://github.com/Manasses-Ndombele/"
@@ -52,24 +54,19 @@ export default function ContactsContainer() {
           </nav>
         </div>
         <div id="email-container">
-          <h2>Envie email para</h2>
+          <h2>{t("contacts-container.social.title-b")}</h2>
           <p>manassesndombelefreelancer@gmail.com</p>
         </div>
       </div>
       <div id="budget-container">
         <div id="budget-container-copy">
-          <h2>Vamos tirar a sua ideia do papel?</h2>
-          <p>
-            Preencha os seus dados e descreva o seu projeto. Vou analisar tudo
-            com atenção e te enviar um orçamento o quanto antes, através do
-            contacto informado. Esse é o primeiro passo para transformar sua
-            ideia em uma solução real.
-          </p>
+          <h2>{t("contacts-container.form.title")}</h2>
+          <p>{t("contacts-container.form.description")}</p>
         </div>
         <div id="budget-form-container">
           <Formik
             onSubmit={() => {
-              console.log("Formulário enviado!");
+              console.log("Form sended!");
             }}
             initialValues={{
               name: "",
@@ -86,7 +83,7 @@ export default function ContactsContainer() {
                   type="text"
                   name="name"
                   id="name-field"
-                  placeholder="Seu nome"
+                  placeholder={t("contacts-container.form.placeholder-a")}
                 />
                 <ErrorMessage component="span" name="name" />
               </div>
@@ -95,7 +92,7 @@ export default function ContactsContainer() {
                   type="text"
                   name="contact_way"
                   id="contact-way-field"
-                  placeholder="Forma de contato"
+                  placeholder={t("contacts-container.form.placeholder-b")}
                 />
                 <ErrorMessage component="span" name="contact_way" />
               </div>
@@ -104,7 +101,7 @@ export default function ContactsContainer() {
                   type="text"
                   name="project_name"
                   id="project-name-field"
-                  placeholder="Nome do projeto"
+                  placeholder={t("contacts-container.form.placeholder-c")}
                 />
                 <ErrorMessage component="span" name="project_name" />
               </div>
@@ -113,7 +110,7 @@ export default function ContactsContainer() {
                   type="text"
                   name="project_example"
                   id="project-example-field"
-                  placeholder="Domínio ou nome de exemplo ou projeto feito"
+                  placeholder={t("contacts-container.form.placeholder-d")}
                 />
                 <ErrorMessage component="span" name="project_example" />
               </div>
@@ -122,12 +119,12 @@ export default function ContactsContainer() {
                   type="text"
                   name="project_description"
                   id="project-description-field"
-                  placeholder="Descrição do projeto"
+                  placeholder={t("contacts-container.form.placeholder-e")}
                   as="textarea"
                 />
                 <ErrorMessage component="span" name="project_description" />
               </div>
-              <button type="submit">Enviar</button>
+              <button type="submit">{t("contacts-container.form.submit-btn")}</button>
             </Form>
           </Formik>
         </div>

@@ -1,16 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { Formik, Form, Field } from "formik";
 import { useTheme } from "@/context/ThemeContext";
 import { CiLight } from "react-icons/ci";
 import { MdDarkMode, MdMenu, MdClose } from "react-icons/md";
-import { IoLanguage } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
+import LangSwitcher from "../LangSwitcher";
 import "@/styles/components/main-header.scss";
 
 function MainHeader() {
   const { theme, toggleTheme } = useTheme();
   const [menuStatus, setMenuStatus] = useState("");
+  const { t } = useTranslation();
   return (
     <header id="main-header">
       <div id="header-main-layout">
@@ -42,29 +43,13 @@ function MainHeader() {
           </button>
         </div>
         <nav>
-          <Link href="/#services-container">Serviços</Link>
-          <Link href="/projects">Projetos</Link>
-          <Link href="/#about-container">Sobre</Link>
-          <Link href="/#contacts-container">Contatos</Link>
+          <Link href="/#services-container">{t("main-nav.link-a")}</Link>
+          <Link href="/projects">{t("main-nav.link-b")}</Link>
+          <Link href="/#about-container">{t("main-nav.link-c")}</Link>
+          <Link href="/#contacts-container">{t("main-nav.link-d")}</Link>
         </nav>
         <menu type="toolbar">
-          <Formik
-            initialValues={{ lang_select: "pt-br" }}
-            onSubmit={(values) => {
-              console.log(values.lang_select);
-            }}
-          >
-            <Form>
-              <label htmlFor="lang-select">
-                <IoLanguage />
-                Língua
-              </label>
-              <Field as="select" name="lang_select" id="lang-select">
-                <option value="en-us">EN - United States</option>
-                <option value="pt-br">PT - Brasil</option>
-              </Field>
-            </Form>
-          </Formik>
+          <LangSwitcher />
           {theme === "light" ? (
             <button
               id="theme-btn"
@@ -73,7 +58,8 @@ function MainHeader() {
                 toggleTheme();
               }}
             >
-              <MdDarkMode /> Modo escuro
+              <MdDarkMode />
+              {` ${t("theme-btn-dark")}`}
             </button>
           ) : (
             <button
@@ -83,7 +69,8 @@ function MainHeader() {
                 toggleTheme();
               }}
             >
-              <CiLight /> Modo claro
+              <CiLight />
+              {` ${t("theme-btn-light")}`}
             </button>
           )}
           <Link href="/#contacts-container">
@@ -94,7 +81,7 @@ function MainHeader() {
                 setMenuStatus("");
               }}
             >
-              Pedir orçamento
+              {t("main-copy.cta-btn")}
             </button>
           </Link>
         </menu>

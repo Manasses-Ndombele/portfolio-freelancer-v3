@@ -6,6 +6,7 @@ import ThemeWrapper from "@/components/ThemeWrapper";
 import MainHeader from "@/components/MainHeader";
 import MainFooter from "@/components/MainFooter";
 import ScrollTopBtn from "@/components/ScrollTopBtn";
+import LangWrapper from "@/components/LangWrapper";
 import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
@@ -24,9 +25,11 @@ export default function RootLayout({
         <ThemeProvider>
           <ThemeWrapper>
             <body>
-              <MainHeader />
-              <ProjectProvider>{children}</ProjectProvider>
-              <MainFooter />
+              <LangWrapper>
+                <MainHeader />
+                <ProjectProvider>{children}</ProjectProvider>
+                <MainFooter />
+              </LangWrapper>
               <ScrollTopBtn />
             </body>
           </ThemeWrapper>

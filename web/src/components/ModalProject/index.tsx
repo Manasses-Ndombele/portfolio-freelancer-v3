@@ -3,11 +3,13 @@ import React, { useEffect, useState, MouseEvent } from "react";
 import Link from "next/link";
 import { useProject } from "@/context/ProjectContext";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "@/styles/components/modal-project.scss";
 
 export default function ModalProject() {
   const { project } = useProject();
   const [modalStatus, setModalStatus] = useState<string>("closed");
+  const { t } = useTranslation();
   useEffect(() => {
     if (
       project.projectTitle !== "" &&
@@ -47,13 +49,13 @@ export default function ModalProject() {
           <Link href={project.projectGithub} target="_blank" rel="external">
             <button type="button">
               <FaGithub />
-              <span>Ver repositório</span>
+              <span>{t("modal-project.cta-a")}</span>
             </button>
           </Link>
           <Link href={project.projectLink} target="_blank" rel="external">
             <button type="button">
               <FaGlobe />
-              <span>Acessar projeto</span>
+              <span>{t("modal-project.cta-b")}</span>
             </button>
           </Link>
         </div>
