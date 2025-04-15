@@ -4,6 +4,10 @@ html.light {
   #brand-intro-content {
     h1 {
       color: $secondary-color;
+
+      strong {
+        color: $primary-color;
+      }
     }
   }
 
@@ -13,6 +17,7 @@ html.light {
       transparent,
       transparent
     );
+
     opacity: 0.3;
   }
 }
@@ -22,15 +27,6 @@ html.dark {
     h1 {
       color: $primary-color-b;
     }
-  }
-
-  #video-shadow {
-    background-image: radial-gradient(
-      $quartenary-color,
-      transparent,
-      transparent
-    );
-    opacity: 0.5;
   }
 }
 
@@ -45,6 +41,11 @@ html.dark {
     max-width: 1100px;
     margin: 0 auto;
     height: 80vh;
+  }
+
+  @include xl() {
+    width: 80%;
+    max-width: 1400px;
   }
 
   #brand-intro-content {

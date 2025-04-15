@@ -18,7 +18,7 @@ export default function ProjectCard({
   projectLink = "",
   projectId = 0,
   projectSkills = [],
-  imgAlt
+  imgAlt,
 }: ProjectCardType) {
   const { openProject } = useProject();
   const router = useRouter();
@@ -32,7 +32,11 @@ export default function ProjectCard({
   return (
     <div className={`project-card ${styleClass}`} id={`project-${projectId}`}>
       <div className="project-img">
-        <Image src={imgSrc} alt={t(imgAlt)} />
+        {styleClass === "card-a" ? (
+          <Image src={imgSrc} alt={t(imgAlt)} unoptimized />
+        ) : (
+          <Image src={imgSrc} alt={t(imgAlt)} />
+        )}
       </div>
       <div className="project-description">
         <h4>{t(projectName)}</h4>

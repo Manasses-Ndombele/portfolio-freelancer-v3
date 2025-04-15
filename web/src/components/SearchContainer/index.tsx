@@ -2,6 +2,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { useProjectFilter } from "@/context/FilterProjectContext";
 import { useTranslation } from "react-i18next";
+import { FaCheck } from "react-icons/fa6";
 import "@/styles/components/search-container.scss";
 
 export default function SearchContainer() {
@@ -41,7 +42,7 @@ export default function SearchContainer() {
         <option value="others">{t("search-container.option-f")}</option>
       </select>
       <div id="skills-filter-container">
-        <div className="field">
+        <div className={`field${skillFilter === "html" ? " active" : ""}`}>
           <input
             type="radio"
             name="skillFilter"
@@ -50,9 +51,12 @@ export default function SearchContainer() {
             checked={skillFilter === "html"}
             onChange={handleSkillFilterRadio}
           />
+          <FaCheck />
           <label htmlFor="skill-filter-1">HTML</label>
         </div>
-        <div className="field">
+        <div
+          className={`field ${skillFilter === "javascript" ? " active" : ""}`}
+        >
           <input
             type="radio"
             name="skillFilter"
@@ -61,9 +65,10 @@ export default function SearchContainer() {
             checked={skillFilter === "javascript"}
             onChange={handleSkillFilterRadio}
           />
+          <FaCheck />
           <label htmlFor="skill-filter-2">JavaScript</label>
         </div>
-        <div className="field">
+        <div className={`field ${skillFilter === "reactjs" ? " active" : ""}`}>
           <input
             type="radio"
             name="skillFilter"
@@ -72,9 +77,10 @@ export default function SearchContainer() {
             checked={skillFilter === "reactjs"}
             onChange={handleSkillFilterRadio}
           />
+          <FaCheck />
           <label htmlFor="skill-filter-3">ReactJS</label>
         </div>
-        <div className="field">
+        <div className={`field ${skillFilter === "python" ? " active" : ""}`}>
           <input
             type="radio"
             name="skillFilter"
@@ -83,9 +89,10 @@ export default function SearchContainer() {
             checked={skillFilter === "python"}
             onChange={handleSkillFilterRadio}
           />
+          <FaCheck />
           <label htmlFor="skill-filter-4">Python</label>
         </div>
-        <div className="field">
+        <div className={`field ${skillFilter === "php" ? " active" : ""}`}>
           <input
             type="radio"
             name="skillFilter"
@@ -94,6 +101,7 @@ export default function SearchContainer() {
             checked={skillFilter === "php"}
             onChange={handleSkillFilterRadio}
           />
+          <FaCheck />
           <label htmlFor="skill-filter-5">PHP</label>
         </div>
       </div>

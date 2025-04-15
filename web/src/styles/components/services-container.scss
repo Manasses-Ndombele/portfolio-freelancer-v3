@@ -48,12 +48,17 @@ html.dark {
       justify-content: space-around;
     }
 
+    @include xl() {
+      width: 80%;
+      max-width: 1400px;
+    }
+
     .service-item {
       text-align: center;
       max-width: 22rem;
       margin: 0 auto;
       @include lg() {
-        max-width: 30rem;
+        max-width: 28rem;
         margin: 0;
       }
 

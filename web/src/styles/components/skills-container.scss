@@ -12,17 +12,17 @@
 
 html.light {
   #skills-container {
+    background-color: $tertiary-color;
+
     h2 {
       color: $primary-color-b;
     }
 
     #skills-categories {
-      background-color: $tertiary-color;
-
       &::before {
         background-image: linear-gradient(
           to right,
-          $tertiary-color-b,
+          $tertiary-color,
           transparent
         );
       }
@@ -30,7 +30,7 @@ html.light {
       &::after {
         background-image: linear-gradient(
           to left,
-          $tertiary-color-b,
+          $tertiary-color,
           transparent
         );
       }
@@ -73,7 +73,7 @@ html.dark {
 }
 
 #skills-container {
-  margin-top: 3rem;
+  padding-top: 3rem;
 
   #skills-copy {
     margin: 0 auto;
@@ -164,7 +164,6 @@ html.dark {
               gap: 2rem;
               flex-wrap: wrap;
               justify-content: center;
-              width: 90%;
               margin: 0 auto;
             }
 

@@ -15,10 +15,11 @@ html.dark {
   }
 }
 
-#search-container {
+form#search-container {
   padding: 0 1rem;
   margin-bottom: 1rem;
-  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
   @include md() {
     padding: 0 2rem;
   }
@@ -34,6 +35,41 @@ html.dark {
     font-size: 1em;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    max-width: 25rem;
     @include poppins-font(400);
+  }
+
+  #skills-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0.8rem 0;
+
+    .field {
+      background-color: $primary-color-b;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: $tertiary-color-b;
+
+      &.active {
+        background-color: $primary-color;
+
+        svg {
+          display: block;
+        }
+      }
+
+      input {
+        display: none;
+      }
+
+      svg {
+        display: none;
+      }
+    }
   }
 }

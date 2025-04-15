@@ -15,7 +15,10 @@ function BrandIntro() {
   return (
     <div id="brand-intro">
       <div id="brand-intro-content">
-        <h1>{t("main-copy.title")}</h1>
+        <h1>
+          {t("main-copy.title")}
+          <strong>{t("main-copy.title.strong")}</strong>
+        </h1>
         <p>{t("main-copy.description")}</p>
         <Link href="#contacts-container">
           <button type="button" className="main-cta">
@@ -28,11 +31,13 @@ function BrandIntro() {
           <Image
             src={projectsGifLight}
             alt={t("projects-gif-alt")}
+            unoptimized
           />
         ) : (
           <Image
             src={projectsGifDark}
             alt={t("projects-gif-alt")}
+            unoptimized
           />
         )}
         <div id="video-shadow"></div>

@@ -3,6 +3,7 @@ import { ChangeEvent, useState, useEffect } from "react";
 import i18n from "@/lib/i18n";
 import { IoLanguage } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import "@/styles/components/lang-switcher.scss";
 
 export default function LangSwitcher() {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export default function LangSwitcher() {
   };
 
   return (
-    <div id="lang-switcher-container">
+    <form id="lang-switcher-container">
       <label htmlFor="lang-select">
         <IoLanguage />
         {t("lang-switcher-label")}
@@ -32,6 +33,6 @@ export default function LangSwitcher() {
         <option value="en">English</option>
         <option value="pt">Portuguese</option>
       </select>
-    </div>
+    </form>
   );
 }

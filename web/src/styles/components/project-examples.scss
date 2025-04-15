@@ -47,6 +47,10 @@ html.dark {
       max-width: 1000px;
     }
 
+    @include xl() {
+      max-width: 1100px;
+    }
+
     .swiper-button-prev {
       z-index: 1;
     }

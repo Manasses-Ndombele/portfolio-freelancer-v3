@@ -135,6 +135,12 @@ html.light {
             &:focus {
               outline: none;
             }
+
+            textarea#project-description-field {
+              resize: none;
+              width: 100%;
+              height: 70px;
+            }
           }
 
           span {
