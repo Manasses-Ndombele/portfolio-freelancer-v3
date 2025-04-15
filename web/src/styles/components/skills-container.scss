@@ -144,7 +144,7 @@ html.dark {
       .skills-items-container {
         overflow-x: hidden;
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         gap: 1.5rem;
         padding: 1rem;
 
@@ -154,7 +154,7 @@ html.dark {
 
         .skills-items {
           display: flex;
-          align-items: start;
+          align-items: flex-start;
           gap: 1.5rem;
           animation: infinite-slider 10s linear infinite;
           @include md() {

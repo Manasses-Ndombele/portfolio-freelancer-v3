@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React, { Suspense } from "react";
 import HomeLinkContainer from "@/components/HomeLinkContainer";
 import ProjectsMainCopy from "@/components/ProjectsMainCopy";
 import SearchContainer from "@/components/SearchContainer";
@@ -19,7 +20,9 @@ export default function Projects() {
         <HomeLinkContainer />
         <ProjectsMainCopy />
         <SearchContainer />
-        <ProjectsContainer />
+        <Suspense fallback={<div>Carregando projetos...</div>}>
+          <ProjectsContainer />
+        </Suspense>
         <ModalProject />
       </main>
     </FilterProvider>
