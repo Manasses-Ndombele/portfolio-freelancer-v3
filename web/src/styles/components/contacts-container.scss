@@ -180,11 +180,6 @@ html.light {
           margin-top: 10px;
           max-width: 14rem;
           @include poppins-font(600);
-          transition: transform 0.3s ease-out;
-
-          &:hover {
-            transform: scale(1.03);
-          }
         }
       }
     }

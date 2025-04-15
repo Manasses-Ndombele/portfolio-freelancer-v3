@@ -9,10 +9,6 @@ html.light {
         color: $primary-color;
       }
     }
-
-    button.main-cta:hover {
-      box-shadow: 2px 4px 6px $primary-color-b;
-    }
   }
 
   #video-shadow {
@@ -30,10 +26,6 @@ html.dark {
   #brand-intro-content {
     h1 {
       color: $primary-color-b;
-    }
-
-    button.main-cta:hover {
-      box-shadow: 2px 4px 6px $primary-color;
     }
   }
 }

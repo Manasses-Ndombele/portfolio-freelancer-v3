@@ -64,21 +64,21 @@ export default function ContactsContainer() {
               <FaGithub />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/ManassesNdombele"
+              href="https://www.linkedin.com/in/manassés-ndombele-384239327"
               target="_blank"
               rel="external"
             >
               <FaLinkedin />
             </Link>
             <Link
-              href="https://t.me/+244923224456"
+              href="https://t.me/+244940971492"
               target="_blank"
               rel="external"
             >
               <FaTelegram />
             </Link>
             <Link
-              href="https://wa.me/244923224456?text=Olá,%20gostaria%20de%20saber%20quanto%20cobrarias%20por%20um%20projeto%20com%20o%20seguinte%20objetivo:%20"
+              href="https://wa.me/244954262072?text=Olá,%20gostaria%20de%20saber%20quanto%20cobrarias%20por%20um%20projeto%20com%20o%20seguinte%20objetivo:%20"
               target="_blank"
               rel="external"
             >
