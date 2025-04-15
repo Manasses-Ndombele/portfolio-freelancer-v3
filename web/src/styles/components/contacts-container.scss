@@ -111,6 +111,26 @@ html.light {
     #budget-form-container {
       padding-right: 1rem;
 
+      p.result-text {
+        margin: 0.5rem 0;
+
+        &.show {
+          display: block;
+        }
+
+        &.hidden {
+          display: none;
+        }
+
+        &.success-text {
+          color: #23c023;
+        }
+
+        &.error-text {
+          color: #f12020;
+        }
+      }
+
       form {
         width: 100%;
         display: flex;

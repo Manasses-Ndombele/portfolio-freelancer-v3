@@ -90,6 +90,8 @@
   "contacts-container.social.title-b": "Envie email para",
   "contacts-container.form.title": "Vamos tirar a sua ideia do papel?",
   "contacts-container.form.description": "Preencha os seus dados e descreva o seu projeto. Vou analisar tudo com atenção e te enviar um orçamento o quanto antes, através do contacto informado. Esse é o primeiro passo para transformar sua ideia em uma solução real.",
+  "contacts-container.submit-msg.success": "O seu pedido foi enviado com sucesso. Muito obrigado por confiar seu projeto a mim!",
+  "contacts-container.submit-msg.error": "Não foi possível enviar o formulário! Talvez seja um problema temporário no servidor. Recarregue a página!",
   "contacts-container.form.placeholder-a": "Seu nome",
   "contacts-container.form.placeholder-b": "Forma de contacto (email ou whatsapp)",
   "contacts-container.form.placeholder-c": "Nome do projeto",

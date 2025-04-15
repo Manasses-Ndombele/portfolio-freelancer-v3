@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -17,6 +17,39 @@ const validationSchema = Yup.object().shape({
 
 export default function ContactsContainer() {
   const { t } = useTranslation();
+  const [submitForm, setSubmitForm] = useState<{
+    submitted: boolean;
+    success: boolean | undefined;
+  }>({
+    submitted: false,
+    success: undefined,
+  });
+
+  async function sendEmail(formDatas: object): Promise<void> {
+    try {
+      const response = await fetch(
+        "https://backend-vgq4.onrender.com/api/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formDatas),
+        }
+      );
+
+      if (!response.ok) {
+        setSubmitForm({ submitted: true, success: false });
+        location.reload();
+      }
+
+      const result = await response.json();
+      setSubmitForm({ submitted: true, success: true });
+      return result;
+    } catch {
+      setSubmitForm({ submitted: true, success: false });
+      location.reload();
+    }
+  }
+
   return (
     <div id="contacts-container">
       <div id="social-area">
@@ -65,8 +98,18 @@ export default function ContactsContainer() {
         </div>
         <div id="budget-form-container">
           <Formik
-            onSubmit={() => {
-              console.log("Form sended!");
+            onSubmit={(values, { setSubmitting, resetForm }) => {
+              setSubmitting(true);
+              const requestBody = {
+                clientName: values.name,
+                clientContactWay: values.contact_way,
+                projectName: values.project_name,
+                projectExample: values.project_example,
+                projectDescription: values.project_description,
+              };
+
+              sendEmail(requestBody);
+              resetForm();
             }}
             initialValues={{
               name: "",
@@ -78,6 +121,17 @@ export default function ContactsContainer() {
             validationSchema={validationSchema}
           >
             <Form method="post">
+              <p
+                className={`result-text ${submitForm.submitted ? "show" : "hidden"}${
+                  submitForm.success ? " success-text" : " error-text"
+                }`}
+              >
+                {t(
+                  `contacts-container.submit-msg.${
+                    submitForm.submitted ? "success" : "error"
+                  }`
+                )}
+              </p>
               <div className="field-container">
                 <Field
                   type="text"

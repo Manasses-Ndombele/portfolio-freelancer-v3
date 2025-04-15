@@ -90,6 +90,8 @@
   "contacts-container.social.title-b": "Email me at",
   "contacts-container.form.title": "Ready to bring your idea to life?",
   "contacts-container.form.description": "Fill out your details and tell me about your project. I’ll review everything carefully and get back to you with a quote as soon as possible. This is the first step toward turning your idea into a real solution.",
+  "contacts-container.submit-msg.success": "Your request has been successfully submitted. Thank you very much for entrusting your project to me!",
+  "contacts-container.submit-msg.error": "The form could not be submitted. This might be a temporary issue with the server. Please reload the page!",
   "contacts-container.form.placeholder-a": "Your name",
   "contacts-container.form.placeholder-b": "Contact method (email or WhatsApp)",
   "contacts-container.form.placeholder-c": "Project name",
