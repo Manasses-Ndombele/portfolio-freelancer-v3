@@ -1,25 +1,36 @@
 "use client";
 import React, { useState, ChangeEvent } from "react";
 import { useProjectFilter } from "@/context/FilterProjectContext";
-import { FilterKey } from "@/types/FilterProjects";
 import { useTranslation } from "react-i18next";
 import "@/styles/components/search-container.scss";
 
 export default function SearchContainer() {
   const { defineFilter } = useProjectFilter();
-  const [selectedOpt, setSelectedOpt] = useState<FilterKey | string>("all");
-  const handleFilterSelect = (e: ChangeEvent<HTMLSelectElement>) => {
-    setSelectedOpt(e.target.value);
-    defineFilter(e.target.value);
+  const [categoryFilter, setCategoryFilter] = useState<string>("all");
+  const handleCategoryFilterSelect = (e: ChangeEvent<HTMLSelectElement>) => {
+    setCategoryFilter(e.target.value);
+    defineFilter({
+      value: e.target.value,
+      _type: "categories",
+    });
   };
 
+  const handleSkillFilterRadio = (e: ChangeEvent<HTMLInputElement>) => {
+    setSkillFilter(e.target.value);
+    defineFilter({
+      value: e.target.value,
+      _type: "skills",
+    });
+  };
+
+  const [skillFilter, setSkillFilter] = useState<string>("");
   const { t } = useTranslation();
   return (
-    <div id="search-container">
+    <form id="search-container">
       <label htmlFor="search-select-field">{t("search-container.label")}</label>
       <select
-        value={selectedOpt}
-        onChange={handleFilterSelect}
+        value={categoryFilter}
+        onChange={handleCategoryFilterSelect}
         id="search-select-field"
       >
         <option value="all">{t("search-container.option-a")}</option>
@@ -29,6 +40,63 @@ export default function SearchContainer() {
         <option value="automations">{t("search-container.option-e")}</option>
         <option value="others">{t("search-container.option-f")}</option>
       </select>
-    </div>
+      <div id="skills-filter-container">
+        <div className="field">
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-1"
+            value="html"
+            checked={skillFilter === "html"}
+            onChange={handleSkillFilterRadio}
+          />
+          <label htmlFor="skill-filter-1">HTML</label>
+        </div>
+        <div className="field">
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-2"
+            value="javascript"
+            checked={skillFilter === "javascript"}
+            onChange={handleSkillFilterRadio}
+          />
+          <label htmlFor="skill-filter-2">JavaScript</label>
+        </div>
+        <div className="field">
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-3"
+            value="reactjs"
+            checked={skillFilter === "reactjs"}
+            onChange={handleSkillFilterRadio}
+          />
+          <label htmlFor="skill-filter-3">ReactJS</label>
+        </div>
+        <div className="field">
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-4"
+            value="python"
+            checked={skillFilter === "python"}
+            onChange={handleSkillFilterRadio}
+          />
+          <label htmlFor="skill-filter-4">Python</label>
+        </div>
+        <div className="field">
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-5"
+            value="php"
+            checked={skillFilter === "php"}
+            onChange={handleSkillFilterRadio}
+          />
+          <label htmlFor="skill-filter-5">PHP</label>
+        </div>
+      </div>
+    </form>
   );
 }

@@ -17,6 +17,7 @@ export default function ProjectCard({
   projectGithub = "",
   projectLink = "",
   projectId = 0,
+  projectSkills = [],
   imgAlt
 }: ProjectCardType) {
   const { openProject } = useProject();
@@ -29,7 +30,7 @@ export default function ProjectCard({
 
   const { t } = useTranslation();
   return (
-    <div className={`project-card ${styleClass}`}>
+    <div className={`project-card ${styleClass}`} id={`project-${projectId}`}>
       <div className="project-img">
         <Image src={imgSrc} alt={t(imgAlt)} />
       </div>
@@ -66,6 +67,7 @@ export default function ProjectCard({
                 projectDescription: projectDescription,
                 projectGithub: projectGithub,
                 projectLink: projectLink,
+                projectSkills: projectSkills,
               });
             }}
           >

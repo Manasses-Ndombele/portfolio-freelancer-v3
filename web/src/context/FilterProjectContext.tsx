@@ -1,11 +1,19 @@
 "use client";
 import React, { createContext, useState, useContext } from "react";
-import { FilterContextType, FilterKey } from "@/types/FilterProjects";
+import {
+  FilterContextType,
+  FilterTypes,
+  MainFilterTypes,
+} from "@/types/FilterProjects";
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
 export function FilterProvider({ children }: { children: React.ReactNode }) {
-  const [filter, setFilter] = useState<FilterKey | string>("all");
-  const defineFilter = (f: FilterKey | string) => {
+  const [filter, setFilter] = useState<MainFilterTypes>({
+    value: "all",
+    _type: "categories",
+  });
+
+  const defineFilter = (f: { value: string; _type: FilterTypes }) => {
     setFilter(f);
   };
 

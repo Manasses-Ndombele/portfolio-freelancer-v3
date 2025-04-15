@@ -1,17 +1,7 @@
 import { StaticImageData } from "next/image";
 
-type keys =
-  | "sales"
-  | "landingPage"
-  | "ecommerce"
-  | "branding"
-  | "institutional"
-  | "webSystems"
-  | "automations"
-  | "others";
-
 export interface ProjectCategory {
-  categoriesKeys: keys[];
+  categoriesKeys: string[];
   categoriesValues: string[];
 }
 

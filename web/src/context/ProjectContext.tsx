@@ -11,6 +11,7 @@ export function ProjectProvider({ children }: { children: React.ReactNode }) {
     projectDescription: "",
     projectGithub: "",
     projectLink: "",
+    projectSkills: [],
   });
 
   const openProject = (project: ProjectType) => {

@@ -14,14 +14,36 @@ export default function ProjectsContainer() {
   const { openProject } = useProject();
   const { defineLoading } = useLoading();
   useEffect(() => {
-    const projectCards = document.querySelectorAll("div.project-card.card-b");
-    projectCards.forEach((card) => {
-      card.classList.remove("card-hidden");
-      const tags = card.querySelector("p.tags");
-      if (!tags?.classList.contains(filter) && filter !== "all") {
-        card.classList.add("card-hidden");
-      } else if (filter === "all") {
-        card.classList.remove("card-hidden");
+    data.forEach((project, index) => {
+      const projectCard = document.querySelector(`#project-${index + 1}`);
+      if (filter._type === "categories") {
+        if (
+          !project.categories.categoriesKeys.includes(filter.value) &&
+          filter.value !== "all"
+        ) {
+          projectCard?.classList.add("card-hidden");
+        } else if (
+          project.categories.categoriesKeys.includes(filter.value) &&
+          filter.value !== "all"
+        ) {
+          projectCard?.classList.remove("card-hidden");
+        } else {
+          projectCard?.classList.remove("card-hidden");
+        }
+      } else if (filter._type === "skills") {
+        if (
+          !project.technologies.some(
+            (tech) => tech.toLocaleLowerCase() === filter.value
+          )
+        ) {
+          projectCard?.classList.add("card-hidden");
+        } else if (
+          project.technologies.some(
+            (tech) => tech.toLocaleLowerCase() === filter.value
+          )
+        ) {
+          projectCard?.classList.remove("card-hidden");
+        }
       }
     });
   }, [filter]);
@@ -36,6 +58,7 @@ export default function ProjectsContainer() {
         projectDescription: data[pos].description,
         projectGithub: data[pos].github,
         projectLink: data[pos].link,
+        projectSkills: data[pos].technologies,
       });
 
       defineLoading(false);
@@ -54,6 +77,8 @@ export default function ProjectsContainer() {
           projectDescription={project.description}
           projectGithub={project.github}
           projectLink={project.link}
+          projectSkills={project.technologies}
+          projectId={index + 1}
           tags={project.categories}
           imgAlt={project.imgAlt}
         />

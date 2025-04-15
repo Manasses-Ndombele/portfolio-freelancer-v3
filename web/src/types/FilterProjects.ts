@@ -1,12 +1,11 @@
-export type FilterKey =
-  | "all"
-  | "sales"
-  | "branding"
-  | "webSystems"
-  | "automations"
-  | "others";
+export type FilterTypes = "skills" | "categories";
+
+export interface MainFilterTypes {
+  value: string;
+  _type: FilterTypes;
+}
 
 export interface FilterContextType {
-  filter: FilterKey | string;
-  defineFilter: (f: FilterKey | string) => void;
+  filter: MainFilterTypes;
+  defineFilter: (f: MainFilterTypes) => void;
 }

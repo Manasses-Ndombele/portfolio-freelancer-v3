@@ -3,4 +3,5 @@ export interface ProjectType {
   projectDescription: string;
   projectGithub: string;
   projectLink: string;
+  projectSkills: string[];
 }

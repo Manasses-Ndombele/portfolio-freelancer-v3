@@ -15,7 +15,8 @@ export default function ModalProject() {
       project.projectTitle !== "" &&
       project.projectDescription !== "" &&
       project.projectGithub !== "" &&
-      project.projectLink !== ""
+      project.projectLink !== "" &&
+      project.projectSkills.length !== 0
     ) {
       setModalStatus("");
     }
@@ -44,7 +45,12 @@ export default function ModalProject() {
         }}
       >
         <h3>{project.projectTitle}</h3>
-        <p>{t(project.projectDescription)}</p>
+        <p className="skills">
+          {project.projectSkills.map((skill, index) => (
+            <span key={index}>{skill}</span>
+          ))}
+        </p>
+        <p className="description">{t(project.projectDescription)}</p>
         <div id="modal-actions">
           <Link href={project.projectGithub} target="_blank" rel="external">
             <button type="button">
