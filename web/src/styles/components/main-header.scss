@@ -160,7 +160,7 @@ header#main-header {
 
     #header-close-action-container {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       padding: 1rem;
     }
 
@@ -182,6 +182,25 @@ header#main-header {
       a {
         text-decoration: none;
         color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0%;
+          height: 4px;
+          background-color: $primary-color-b;
+          transition: width 0.3s ease-in;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
 

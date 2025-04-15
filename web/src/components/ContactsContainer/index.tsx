@@ -124,7 +124,9 @@ export default function ContactsContainer() {
                 />
                 <ErrorMessage component="span" name="project_description" />
               </div>
-              <button type="submit">{t("contacts-container.form.submit-btn")}</button>
+              <button type="submit">
+                {t("contacts-container.form.submit-btn")}
+              </button>
             </Form>
           </Formik>
         </div>
