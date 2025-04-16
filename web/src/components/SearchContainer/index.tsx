@@ -104,6 +104,30 @@ export default function SearchContainer() {
           <FaCheck />
           <label htmlFor="skill-filter-5">PHP</label>
         </div>
+        <div className={`field ${skillFilter === "typescript" ? " active" : ""}`}>
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-6"
+            value="typescript"
+            checked={skillFilter === "typescript"}
+            onChange={handleSkillFilterRadio}
+          />
+          <FaCheck />
+          <label htmlFor="skill-filter-6">TypeScript</label>
+        </div>
+        <div className={`field ${skillFilter === "nextjs" ? " active" : ""}`}>
+          <input
+            type="radio"
+            name="skillFilter"
+            id="skill-filter-7"
+            value="nextjs"
+            checked={skillFilter === "nextjs"}
+            onChange={handleSkillFilterRadio}
+          />
+          <FaCheck />
+          <label htmlFor="skill-filter-7">NextJS</label>
+        </div>
       </div>
     </form>
   );

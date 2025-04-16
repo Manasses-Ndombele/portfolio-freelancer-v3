@@ -5,9 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Pagination } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa";
 import ProjectCard from "@/components/ProjectCard";
-import project1 from "@/assets/project-example-1.gif";
-import project2 from "@/assets/project-example-2.gif";
-import project3 from "@/assets/project-example-3.gif";
 import { data } from "@/data/projects";
 import { useTranslation } from "react-i18next";
 import "swiper/swiper-bundle.css";
@@ -47,7 +44,7 @@ export default function ProjectsExamples() {
       >
         <SwiperSlide>
           <ProjectCard
-            imgSrc={project1}
+            imgSrc={data[0].img}
             projectName={data[0].name}
             tags={data[0].categories}
             styleClass="card-a"
@@ -57,7 +54,7 @@ export default function ProjectsExamples() {
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
-            imgSrc={project2}
+            imgSrc={data[1].img}
             projectName={data[1].name}
             tags={data[1].categories}
             styleClass="card-a"
@@ -67,7 +64,7 @@ export default function ProjectsExamples() {
         </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
-            imgSrc={project3}
+            imgSrc={data[2].img}
             projectName={data[2].name}
             tags={data[2].categories}
             styleClass="card-a"

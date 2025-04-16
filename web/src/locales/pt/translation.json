@@ -36,8 +36,9 @@
   "projectCard2": {
     "category1": "Site para branding",
     "category2": "Site institucional",
-    "description": "Este é um site institucional de exemplo, no caso para uma empresa fictícia que presta serviços de consultoria, isto é apenas uma demonstração das minhas habilidades em desenvolvimento frontend e webdesign.",
-    "imgAlt": "Exemplo de site institucional para branding de empresa de consultoria"
+    "category3": "Sistema web",
+    "description": "Este é um site institucional e também um sistema web de reservas criado com PHP e outras ferramentas, ele foi desenvolvido para um hotel fictício denominado `EDEN Hotels` que se situa na Europa.",
+    "imgAlt": "Exemplo de site institucional para branding de uma rede de hotéis e sistema web de reservas"
   },
   "projectCard3": {
     "category1": "Site de vendas",
@@ -46,39 +47,50 @@
     "imgAlt": "Exemplo de loja online moderna de óculos VR"
   },
   "projectCard4": {
+    "category1": "Site para branding",
+    "category2": "Site institucional",
+    "description": "Este é um site institucional de exemplo, no caso para uma empresa fictícia que presta serviços de consultoria, isto é apenas uma demonstração das minhas habilidades em desenvolvimento frontend e webdesign.",
+    "imgAlt": "Exemplo de site institucional para branding de empresa de consultoria"
+  },
+  "projectCard5": {
     "category1": "Outros",
     "description": "Este é um quiz para teste de vício em compulsão baseado em dados da OMS criado para ser adicionada a plataforma Socorre.me de Daniel Santos.",
     "imgAlt": "Quiz para teste de vício em compulsão da Socorre.me"
   },
-  "projectCard5": {
+  "projectCard6": {
     "category1": "Sistema web",
     "category2": "Automações",
     "description": "Este é um mini sistema de envio de emails em massa usando SMTP para enviar emails de forma gratuita e rápida através de uma senha de aplicativo para que o site tenha acesso a uma conta de email de remetente.",
     "imgAlt": "Sistema web de automação de envio de emails"
   },
-  "projectCard6": {
+  "projectCard7": {
     "category1": "Site de vendas",
     "category2": "Landing page",
     "description": "Esta é uma landing page de exemplo para simular a venda do acesso a uma plataforma de cursos no nicho de criptomoedas denominada `CriptoHacking`.",
     "imgAlt": "Exemplo de landing page de alta conversão"
   },
-  "projectCard7": {
+  "projectCard8": {
     "category1": "Site para branding",
     "category2": "Site institucional",
     "description": "Este é um site institucional criado para uma fictícia empresa prestadora de serviçõs de marketing digital e software house, é apenas para demonstrar meus conhecimentos na base da web (HTML, CSS, JS).",
     "imgAlt": "Exemplo de site institucional para branding de empresa de marketing"
   },
-  "projectCard8": {
+  "projectCard9": {
     "category1": "Automações",
     "category2": "Outros",
     "description": "Este projeto é um programa desktop multiplataforma com objetivo de gerar receitas nutritivas para o usuário com base nos nutrientes e a quantidade em gramas selecionadas pelo usuário, as receitas são geradas através da SponnacularAPI.",
     "imgAlt": "Automação e programa desktop para planejamento de dietas"
   },
-  "projectCard9": {
+  "projectCard10": {
     "category1": "Automações",
     "category2": "Outros",
     "description": "Este é um programa desktop multiplataforma criado com o objetivo de gerar recomendações de filmes baseado em dados recolhidos sobre os gêneros de filmes de interesse do usuário, essas mesmas recomendações são enviadas para o whatsapp do usuário através de um Bot.",
     "imgAlt": "Automação e programa desktop para recomendação de filmes pelo Whatsapp"
+  },
+  "projectCard11": {
+    "category1": "Outros",
+    "description": "Este é meu portfólio freelancer que estás navegando nele criado de forma detalhista com o objetivo de passar examente a imagem de que crio meus sites com conhecimento técnico mas além disso muita criatividade.",
+    "imgAlt": "Portfólio freelancer do desenvolvedor Manassés Ndombele"
   },
   "project-card.btn-action": "Saiba mais",
   "projects-container.btn-action": "Ver todos projetos",
