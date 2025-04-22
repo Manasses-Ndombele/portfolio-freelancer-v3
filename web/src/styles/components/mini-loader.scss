@@ -1,0 +1,10 @@
+@use "../base/variables.scss" as *;
+
+.mini-loader {
+  width: 30px;
+  height: 30px;
+  border: 5px solid $secondary-color;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 1s ease-in infinite;
+}

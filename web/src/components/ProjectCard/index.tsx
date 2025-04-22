@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useProject } from "@/context/ProjectContext";
 import { useLoading } from "@/context/LoadingDataContext";
 import { ProjectCardType } from "@/types/ProjectCard";
 import { useTranslation } from "react-i18next";
+import MiniLoader from "../MiniLoader";
 import "@/styles/components/project-card.scss";
 
 export default function ProjectCard({
@@ -33,9 +34,13 @@ export default function ProjectCard({
     <div className={`project-card ${styleClass}`} id={`project-${projectId}`}>
       <div className="project-img">
         {styleClass === "card-a" ? (
-          <Image src={imgSrc} alt={t(imgAlt)} unoptimized />
+          <Suspense fallback={<MiniLoader />}>
+            <Image src={imgSrc} alt={t(imgAlt)} unoptimized />
+          </Suspense>
         ) : (
-          <Image src={imgSrc} alt={t(imgAlt)} />
+          <Suspense fallback={<MiniLoader />}>
+            <Image src={imgSrc} alt={t(imgAlt)} />
+          </Suspense>
         )}
       </div>
       <div className="project-description">
