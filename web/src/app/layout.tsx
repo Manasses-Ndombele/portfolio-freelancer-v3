@@ -10,8 +10,8 @@ import LangWrapper from "@/components/LangWrapper";
 import "@/styles/globals.scss";
 
 export const metadata: Metadata = {
-  title: "Manassés Ndombele | Desenvolvedor Freelancer",
-  description: "Portfólio freelancer de Manassés Ndombele",
+  title: "Manassés Ndombele | Web Developer",
+  description: "Portfolio of web developer Manassés Ndombele",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="en-us">
       <LoadingDataProvider>
         <ThemeProvider>
           <ThemeWrapper>
