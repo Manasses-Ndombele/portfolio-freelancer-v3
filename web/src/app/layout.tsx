@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Head } from "next/document";
+import { Head } from "next/head";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { ProjectProvider } from "@/context/ProjectContext";
 import { LoadingDataProvider } from "@/context/LoadingDataContext";
