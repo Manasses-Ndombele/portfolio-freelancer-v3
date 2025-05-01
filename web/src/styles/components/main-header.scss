@@ -27,6 +27,11 @@ html.light {
     #header-options {
       background-color: $tertiary-color-b;
 
+      nav > a:hover {
+        background-color: $primary-color;
+        color: $tertiary-color;
+      }
+
       button#theme-btn {
         background-color: $tertiary-color;
         border: none;
@@ -71,6 +76,11 @@ html.dark {
 
     #header-options {
       background-color: $tertiary-color;
+
+      nav > a:hover {
+        background-color: $primary-color-b;
+        color: $tertiary-color-b;
+      }
 
       button#theme-btn {
         background-color: transparent;
@@ -186,21 +196,9 @@ header#main-header {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 0%;
-          height: 2px;
-          background-color: $primary-color-b;
-          transition: width 0.3s ease-in;
-        }
-
-        &:hover {
-          &::after {
-            width: 100%;
-          }
-        }
+        padding: 0.3rem;
+        border-radius: 1rem;
+        transition: background-color 0.3s ease-in, color 0.4s ease-in;
       }
     }
 
